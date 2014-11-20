@@ -1,0 +1,44 @@
+ <article id="index">
+   <ng-include src="'/views/_partials/navigation.html'"></ng-include>
+   <ng-include src="'/views/_partials/header.html'"></ng-include>
+   <div class="application-content">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Bewerbung</h1>
+        <h3>als</h3>
+        <h1>{{ index.application.job }}</h1>
+        <h3>bei</h3>
+        <h2>{{ index.application.name }}</h2>
+      </div>
+    </div>
+    <div class="col-xs-push-7 col-xs-5" style="margin-top: 200px;">
+      <div class="assets">
+        <div class="logo">
+          <i class="fa fa-home fa-2x"></i>
+        </div>
+        <h3 style="text-align: center">Anlagen</h3>
+        <div class="information-list">
+          <div class="col-xs-12">
+            <p><strong>Anlagenliste</strong></p>
+            <div class="list">
+              <table>
+                <tr ng-repeat="asset in index.assets">
+                  <td class="first-row">
+                    <p>
+                      <a ng-href="{{ asset.href }}" target="{{ asset.target}}">
+                        {{ asset.name }}
+                      </a>
+                    </p>
+                  </td>
+                  <td class="second-row">
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+   <ng-include src="'/views/_partials/footer.html'"></ng-include>
+ </article>

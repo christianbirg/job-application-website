@@ -1,0 +1,40 @@
+<html ng-app="application">
+  <head>
+    <title>Bewerbung von Christian Birg</title>
+    <meta charset="utf-8">
+    <base href="/"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="print" title="no title">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" title="no title">
+    <link rel="stylesheet" type="text/css" href="css/style.css" title="no title">
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <script src="js/lib/jquery.min.js" charset="utf-8"></script>
+    <script src="js/lib/bootstrap.min.js" charset="utf-8"></script>
+    <script src="js/lib/angular.min.js" charset="utf-8"></script>
+    <script src="js/lib/angular-route.min.js" charset="utf-8"></script>
+    <script src="js/lib/angular-sanitize.min.js" charset="utf-8"></script>
+
+
+    <script src="js/app/utilities/ObjectManager.js" charset="utf-8"></script>
+    <script src="js/app/services/DataService.js" charset="utf-8"></script>
+
+    <script src="js/app/config.js" charset="utf-8"></script>
+    <script src="js/data/application.js" charset="utf-8"></script>
+
+    <script src="js/app/controllers/ApplicationController.js" charset="utf-8"></script>
+    <script src="js/app/controllers/CurriculumController.js" charset="utf-8"></script>
+    <script src="js/app/controllers/SkillPageController.js" charset="utf-8"></script>
+    <script src="js/app/controllers/IndexController.js" charset="utf-8"></script>
+
+    <script src="js/app/directives/RatingBar.js" charset="utf-8"></script>
+    <script src="js/app/directives/Timeline.js" charset="utf-8"></script>
+
+  </head>
+  <body>
+    <div id="area">
+      <ng-view></ng-view>
+    </div>
+  </body>
+</html>

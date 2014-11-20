@@ -1,0 +1,51 @@
+ul.navigation, ul.print {
+  z-index: 3000;
+  padding: 0;
+  list-style: none;
+  display: block;
+  li {
+    border-radius: 2px;
+    display: inline-block;
+    margin-right: 10px;
+    padding: $space;
+    height: 40px;
+    -webkit-transition: all .5s ease-in-out;
+	  -moz-transition: all .5s ease-in-out;
+	  transition: all .5s ease-in-out;
+
+    &:first-child {
+      margin-left: 10px;
+    }
+
+    &:before {
+      width: 20px;
+      height: 20px;
+      display: block;
+      background: green;
+    }
+
+    &:hover {
+      height: 60px;
+    }
+
+    a {
+      text-shadow: 1px 2px 3px black;
+      color: $fourth-color;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+ul.navigation {
+  position: absolute;
+  top: -20px;
+  right: 0px;
+}
+
+ul.print {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+}

@@ -1,0 +1,40 @@
+#skill-page {
+
+  .skill-section {
+    margin-bottom: 5px;
+    overflow: hidden;
+  }
+}
+
+.information-list {
+  p {
+    font-size: $medium-font-size;
+    line-height: 1.8;
+    letter-spacing: 0.2;
+    vertical-align: bottom;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  table {
+    min-width: 100%;
+    margin-bottom: $space;
+    tr {
+      margin: ( 2 * $half-space ) 0px;
+      td:first-child {
+        width: 60%;
+      }
+
+      td:last-child {
+        width: 40%;
+      }
+
+      a {
+        color: $primary-color;
+        &:hover {
+          text-transform: none;
+        }
+      }
+    }
+  }
+}
