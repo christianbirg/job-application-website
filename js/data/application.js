@@ -1,21 +1,21 @@
 window.data = {
   company: {
     name: {
-      value: "joocom GmbH"
+      value: "Musterfirma GmbH"
     },
     address: {
       person: {
         value: "Personalabteilung"
       },
       street: {
-        value: "Göttinger Chaussee 115",
+        value: "Musterstraße 42",
 
       },
       plz: {
-        value: "D – 30459"
+        value: "D – 1337"
       },
       city: {
-        value: 'Hannover'
+        value: 'Musterstadt'
       }
     }
   },
@@ -28,10 +28,10 @@ window.data = {
   person: {
     icon: 'glyphicon glyphicon-user',
     name: {
-      value: 'Birg'
+      value: 'Incoqnito'
     },
     forename: {
-      value: 'Christian'
+      value: 'Chris'
     },
     portrait: {
       src: 'images/photo.jpg',
@@ -39,23 +39,23 @@ window.data = {
     },
     address: {
       fullName: {
-        value: 'Christian Birg',
+        value: 'Chris Incoqnito',
         class: 'glyphicon glyphicon-user',
       },
       telephone: {
-        value: "0177 9651165",
+        value: "0177 13371337",
         class: 'glyphicon glyphicon-phone'
       },
       email: {
-        value: "christian.birg@gmail.com",
+        value: "chris@incoqnito.com",
         class: 'glyphicon glyphicon-envelope'
       },
       street: {
-        value: "Dohmeyers Weg 10A",
+        value: "Musterstraße 21",
         class: 'glyphicon glyphicon-home'
       },
       plz: {
-        value: "30625 Hannover",
+        value: "1337 Musterstadt",
         class: 'glyphicon glyphicon-map-marker'
       }
     }
@@ -82,8 +82,8 @@ window.data = {
     index: {
       id: 'index',
       application: {
-        job: "Frontend Web Developer (m/w)",
-        name: "joocom GmbH",
+        job: "Stellenangebot",
+        name: "Musterfirma GmbH",
       },
       assets: [
         {
@@ -103,60 +103,11 @@ window.data = {
           href: "/skill-page",
           target: ""
         }
-        ,
-        {
-          name: "Zeugnis Realschule",
-          href: "assets/realschule.png",
-          target: "_blank"
-        }
-        ,
-        {
-          name: "Zeugnis Berufsfachschule",
-          href: "assets/berufsfachschule.png",
-          target: "_blank"
-        }
-        ,
-        {
-          name: "Zeugnis Fachhochschule",
-          href: "assets/fachhochschule.png",
-          target: "_blank"
-        }
-        ,
-        {
-          name: "Zeugnis Ausbildung Jahr 1",
-          href: "assets/ausbildungsjahr_eins.png",
-          target: "_blank"
-        }
-        ,
-        {
-          name: "Zeugnis Ausbildung Jahr 2",
-          href: "assets/ausbildungsjahr_zwei.png",
-          target: "_blank"
-        }
-        ,
-        {
-          name: "Zeugnis Ausbildung Jahr 3",
-          href: "assets/ausbildungsjahr_drei.png",
-          target: "_blank"
-        }
-        ,
-        {
-          name: "IHK Prüfungszeugniskopie",
-          href: "assets/ihk_abschluss.png",
-          target: "_blank"
-        }
-        ,
-        {
-          name: "Letztes Arbeitszeugnis",
-          href: "assets/zwischenzeugnis.pdf",
-          target: "_blank"
-
-        }
       ]
     },
     application: {
       subject: {
-        text: "Bewerbung auf das Stellenprofil Frontend Web Developer (m/w)",
+        text: "Bewerbung auf das Stellenangebot (m/w)",
         icon: "fa fa-angle-double-down"
       },
       title: "Sehr geehrte Damen und Herren",
@@ -168,7 +119,7 @@ window.data = {
         "Klingt das interessant für Sie? Dann sehen Sie meine weiteren Unterlagen durch und laden mich zu einem persönlichen Gespräch ein. Ich freue mich darauf"
       ],
       salutation: "Mit freundlichen Grüßen",
-      signing: "Christian Birg"
+      signing: "Chris Incoqnito"
     },
     curriculumVitae: {
       events: [
@@ -177,19 +128,19 @@ window.data = {
           icon: 'fa-graduation-cap',
           ticks: [
             {
-              name: "Realschule, Ludwig-Windthorst-Schule",
+              name: "Realschule, XYZ",
               begin: 2004,
               end: 2008,
               text: "<strong>Abschluss:</strong> Erweiterter Sekundarabschluss I"
             },
             {
-              name: "Berufschule, BBS-ME Otto Brenner-Schule",
+              name: "Berufschule,XYZ",
               begin: 2008,
               end: 2010,
               text: "<strong>Abschluss:</strong> Staatlich geprüfter Assistent für Informatik"
             },
             {
-              name: "Fachhochschule. BBS-ME Otto Brenner-Schule",
+              name: "Fachhochschule, XYZ",
               begin: 2010,
               end: 2011,
               text: "<strong>Abschluss:</strong> Fachhochschulreife"
@@ -201,13 +152,13 @@ window.data = {
           icon: 'fa-institution',
           ticks: [
             {
-              name: "Höft & Wessel AG",
+              name: "XYZ AG",
               begin: "01.08.2012",
               end: "31.08.2013",
               text: "Beginn der Ausbildung"
             },
             {
-              name: "THIS IS! Digital Media Group GmbH",
+              name: "XYZ GmbH",
               begin: "01.09.2013",
               end: "30.06.2014",
               text: "<strong>Abschluss:</strong> Fachinformatiker für Anwendungsentwicklung"
@@ -219,7 +170,7 @@ window.data = {
           icon: 'fa-rocket',
           ticks: [
             {
-              name: "THIS IS! Digital Media Group GmbH",
+              name: "XYZ GmbH",
               begin: "01.07.2014",
               end: "31.10.2014",
               text: ""

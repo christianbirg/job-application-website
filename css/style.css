@@ -39,28 +39,29 @@ article:last-child {
 }
 /* line 32, ../sass/_page.scss */
 .application-header .profile-photo img {
+  box-shadow: 0px 0px 3px #999;
   height: 150px;
   margin: auto;
 }
-/* line 38, ../sass/_page.scss */
+/* line 39, ../sass/_page.scss */
 .application-header .address p, .application-header .address span {
   text-align: right;
   line-height: 2;
 }
-/* line 42, ../sass/_page.scss */
+/* line 43, ../sass/_page.scss */
 .application-header .address i {
   margin-left: 15px;
   width: 10px;
 }
 
-/* line 53, ../sass/_page.scss */
+/* line 54, ../sass/_page.scss */
 .application-footer {
   position: absolute;
   bottom: 0px;
   left: 0px;
   width: 100%;
 }
-/* line 58, ../sass/_page.scss */
+/* line 59, ../sass/_page.scss */
 .application-footer p {
   text-align: center;
   font-size: 10px;
