@@ -12,6 +12,11 @@
 
 @import 'components/timeline.scss';
 @import 'components/ratingbar.scss';
+@import 'components/onoffswitch.scss';
+@import 'components/editmode.scss';
+@import 'components/loading.scss';
+
+@import 'xeditable.scss';
 
 @import 'print.scss';
 
@@ -26,6 +31,10 @@ html, body {
   background: $background-color;
   width: 100%;
   height: 100%;
+}
+
+#area {
+  position: relative;
 }
 
 .uppercased {

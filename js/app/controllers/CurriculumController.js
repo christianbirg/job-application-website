@@ -1,11 +1,9 @@
-application.controller('CurriculumController',
-  function($scope){
-
-    var dataService = window.ObjectManager.getInstance().getSingleton(DataService);
-
-    $scope.curriculum = dataService.get('sites', 'curriculumVitae');
-    $scope.social = dataService.get('social');
-    $scope.person = dataService.get('person');
-
-  }
+application.controller('CurriculumController', ['$scope', '$rootScope', 'DataService',
+  function($scope,  $rootScope, DataService){
+    $scope.application = DataService.fetch().then(function(data){
+      $scope.curriculum = data.curriculumVitae;
+      $scope.social = data.social;
+      $scope.person = data.person;
+    });
+  }]
 );

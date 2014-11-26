@@ -1,34 +1,15 @@
-(function() {
+application.factory('DataService', ['$timeout', '$q', '$http', function($timeout, $q, $http) {
+  return {
+    fetch: function fetch() {
+      var deferred = $q.defer();
 
-  DataService = function DataService() {
+      $timeout(function() {
+        $http.get('assets/application.json').success(function(data) {
+          deferred.resolve(data);
+        });
+      }, 30);
 
-  };
-
-  DataService.prototype.init = function init() {
-      this.dataSource = window.data;
-  };
-
-  DataService.prototype.get = function get(block, site) {
-    var site = site || false;
-    var dataSource = this.dataSource;
-    for (var key in dataSource) {
-      if(dataSource.hasOwnProperty(key) && key === block) {
-        var obj = dataSource[key];
-
-        if(site === false) {
-          return dataSource[key];
-        }
-
-        for (var prop in obj) {
-          if(obj.hasOwnProperty(prop) && prop === site){
-            return obj[prop];
-          }
-        }
-      }
+      return deferred.promise;
     }
-
-    return [];
-
   }
-
-})();
+}]);

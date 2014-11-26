@@ -56,25 +56,49 @@ article:last-child {
 
 /* line 54, ../sass/_page.scss */
 .application-footer {
+  padding-left: 40px;
+  padding-right: 40px;
   position: absolute;
   bottom: 0px;
   left: 0px;
   width: 100%;
 }
-/* line 59, ../sass/_page.scss */
+/* line 61, ../sass/_page.scss */
 .application-footer p {
   text-align: center;
   font-size: 10px;
 }
 
 /* line 1, ../sass/_navigation.scss */
-ul.navigation, ul.print {
+ul.navigation, ul.print, ul.settings {
   z-index: 3000;
   padding: 0;
   list-style: none;
   display: block;
 }
-/* line 6, ../sass/_navigation.scss */
+
+/* line 9, ../sass/_navigation.scss */
+ul.settings li {
+  margin-bottom: 5px;
+}
+/* line 11, ../sass/_navigation.scss */
+ul.settings li a {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #666;
+  border-radius: 0px;
+  padding-left: 5px;
+  text-transform: uppercase;
+  background-color: #00A4DE;
+  color: #FFFFFF;
+}
+/* line 17, ../sass/_navigation.scss */
+ul.settings li a:hover {
+  text-decoration: none;
+}
+
+/* line 25, ../sass/_navigation.scss */
 ul.navigation li, ul.print li {
   border-radius: 2px;
   display: inline-block;
@@ -85,39 +109,46 @@ ul.navigation li, ul.print li {
   -moz-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
-/* line 16, ../sass/_navigation.scss */
+/* line 35, ../sass/_navigation.scss */
 ul.navigation li:first-child, ul.print li:first-child {
   margin-left: 10px;
 }
-/* line 20, ../sass/_navigation.scss */
+/* line 39, ../sass/_navigation.scss */
 ul.navigation li:before, ul.print li:before {
   width: 20px;
   height: 20px;
   display: block;
   background: green;
 }
-/* line 27, ../sass/_navigation.scss */
+/* line 46, ../sass/_navigation.scss */
 ul.navigation li:hover, ul.print li:hover {
   height: 60px;
 }
-/* line 31, ../sass/_navigation.scss */
+/* line 50, ../sass/_navigation.scss */
 ul.navigation li a, ul.print li a {
   text-shadow: 1px 2px 3px black;
   color: white;
 }
-/* line 34, ../sass/_navigation.scss */
+/* line 53, ../sass/_navigation.scss */
 ul.navigation li a:hover, ul.print li a:hover {
   text-decoration: none;
 }
 
-/* line 41, ../sass/_navigation.scss */
+/* line 60, ../sass/_navigation.scss */
 ul.navigation {
   position: absolute;
   top: -20px;
   right: 0px;
 }
 
-/* line 47, ../sass/_navigation.scss */
+/* line 66, ../sass/_navigation.scss */
+ul.settings {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+}
+
+/* line 72, ../sass/_navigation.scss */
 ul.print {
   position: absolute;
   top: -20px;
@@ -187,7 +218,7 @@ ul.print {
 
 /* line 3, ../sass/pages/_skill.scss */
 #skill-page .skill-section {
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   overflow: hidden;
 }
 
@@ -404,6 +435,304 @@ ul.print {
   background: linear-gradient(45deg, #666666 0%, #666666 50%, #bbbbbb 50%, #bbbbbb 100%);
 }
 
+/* line 1, ../sass/components/_onoffswitch.scss */
+.onoffswitch {
+  position: relative;
+  width: 68px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* line 5, ../sass/components/_onoffswitch.scss */
+.onoffswitch-checkbox {
+  display: none;
+}
+
+/* line 8, ../sass/components/_onoffswitch.scss */
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #666;
+  border-radius: 0px;
+}
+
+/* line 12, ../sass/components/_onoffswitch.scss */
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  -moz-transition: margin 0.3s ease-in 0s;
+  -webkit-transition: margin 0.3s ease-in 0s;
+  -o-transition: margin 0.3s ease-in 0s;
+  transition: margin 0.3s ease-in 0s;
+}
+
+/* line 17, ../sass/components/_onoffswitch.scss */
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 20px;
+  padding: 0;
+  line-height: 20px;
+  font-size: 13px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 22, ../sass/components/_onoffswitch.scss */
+.onoffswitch-inner:before {
+  content: "ON";
+  padding-left: 5px;
+  background-color: #00A4DE;
+  color: #FFFFFF;
+}
+
+/* line 27, ../sass/components/_onoffswitch.scss */
+.onoffswitch-inner:after {
+  content: "OFF";
+  padding-right: 5px;
+  background-color: #EEEEEE;
+  color: #666;
+  text-align: right;
+}
+
+/* line 33, ../sass/components/_onoffswitch.scss */
+.onoffswitch-switch {
+  display: block;
+  width: 15px;
+  margin: 4px;
+  background: #FFFFFF;
+  border: 2px solid #666;
+  border-radius: 0px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 44px;
+  -moz-transition: all 0.3s ease-in 0s;
+  -webkit-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+}
+
+/* line 41, ../sass/components/_onoffswitch.scss */
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+
+/* line 44, ../sass/components/_onoffswitch.scss */
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+
+/* line 3, ../sass/components/_editmode.scss */
+body.editmode-enabled * {
+  box-sizing: border-box;
+}
+/* line 6, ../sass/components/_editmode.scss */
+body.editmode-enabled .row {
+  border-left: 1px dashed #999;
+  border-right: 1px dashed #999;
+  border-bottom: 1px dashed #999;
+}
+/* line 7, ../sass/components/_editmode.scss */
+body.editmode-enabled .row:first-child {
+  border-top: 1px dashed #999;
+}
+/* line 13, ../sass/components/_editmode.scss */
+body.editmode-enabled .row > div {
+  border-right: 1px dashed #999;
+}
+/* line 15, ../sass/components/_editmode.scss */
+body.editmode-enabled .row > div:last-child {
+  border-right: none;
+}
+/* line 20, ../sass/components/_editmode.scss */
+body.editmode-enabled .row:hover {
+  border-color: red;
+}
+
+/* line 1, ../sass/components/_loading.scss */
+#loading-overlay {
+  background: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 99999;
+  display: none;
+}
+
+/* line 12, ../sass/components/_loading.scss */
+.spinner-wrapper {
+  position: fixed;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  margin: auto;
+}
+
+/* line 19, ../sass/components/_loading.scss */
+.spinner {
+  width: 100px;
+  height: 100px;
+  background: #00a4de;
+  margin: 0 auto;
+  -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+  animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+  /* line 30, ../sass/components/_loading.scss */
+  0% {
+    -webkit-transform: perspective(120px);
+  }
+
+  /* line 31, ../sass/components/_loading.scss */
+  50% {
+    -webkit-transform: perspective(120px) rotateY(180deg);
+  }
+
+  /* line 32, ../sass/components/_loading.scss */
+  100% {
+    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
+  }
+}
+
+@keyframes rotateplane {
+  /* line 36, ../sass/components/_loading.scss */
+  0% {
+    transform: perspective(100px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+
+  /* line 39, ../sass/components/_loading.scss */
+  50% {
+    transform: perspective(100px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+
+  /* line 42, ../sass/components/_loading.scss */
+  100% {
+    transform: perspective(100px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+/* line 1, ../sass/_xeditable.scss */
+.editable-wrap {
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0;
+  width: 100%;
+}
+
+/* line 7, ../sass/_xeditable.scss */
+.editable-wrap .editable-controls, .editable-wrap .editable-error {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+/* line 12, ../sass/_xeditable.scss */
+.editable-wrap .editable-controls > input, .editable-wrap .editable-controls > select,
+.editable-wrap .editable-controls > textarea {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+/* line 17, ../sass/_xeditable.scss */
+.editable-wrap .editable-controls > textarea {
+  min-height: 450px;
+}
+
+/* line 21, ../sass/_xeditable.scss */
+.editable-wrap .editable-input {
+  display: inline-block;
+}
+
+/* line 25, ../sass/_xeditable.scss */
+.editable-buttons {
+  display: block;
+  margin-top: 10px;
+}
+
+/* line 30, ../sass/_xeditable.scss */
+.editable-buttons button {
+  margin-left: 5px;
+}
+/* line 32, ../sass/_xeditable.scss */
+.editable-buttons button:first-child {
+  margin-left: 0px;
+}
+
+/* line 37, ../sass/_xeditable.scss */
+.editable-input.editable-has-buttons {
+  width: auto;
+}
+
+/* line 41, ../sass/_xeditable.scss */
+.editable-bstime .editable-input input[type=text] {
+  width: 100%;
+}
+
+/* line 45, ../sass/_xeditable.scss */
+.editable-bstime .well-small {
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+/* line 50, ../sass/_xeditable.scss */
+.editable-range output {
+  display: inline-block;
+  min-width: 30px;
+  vertical-align: top;
+  text-align: center;
+}
+
+/* line 57, ../sass/_xeditable.scss */
+.editable-color input[type=color] {
+  width: 50px;
+}
+
+/* line 61, ../sass/_xeditable.scss */
+.editable-checkbox label span, .editable-checklist label span, .editable-radiolist label span {
+  margin-left: 7px;
+  margin-right: 10px;
+  width: 100%;
+}
+
+/* line 67, ../sass/_xeditable.scss */
+.editable-hide {
+  display: none !important;
+}
+
+/* line 71, ../sass/_xeditable.scss */
+.editable-click, a.editable-click {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 77, ../sass/_xeditable.scss */
+.editable-click:hover, a.editable-click:hover {
+  text-decoration: none;
+  color: red;
+  font-style: underline;
+}
+
+/* line 84, ../sass/_xeditable.scss */
+.editable-empty, .editable-empty:hover, .editable-empty:focus, a.editable-empty,
+a.editable-empty:hover, a.editable-empty:focus {
+  font-style: italic;
+  color: #D14;
+  text-decoration: none;
+}
+
 /*
   Because the print view doesnt show the colors, ignoring the print settings, forced by twitter bootstrap.
   So i musr set the colors to important. I know !important is really ugly and unmaintainable
@@ -458,7 +787,7 @@ ul.print {
   }
 
   /* line 50, ../sass/_print.scss */
-  ul.navigation, ul.print {
+  ul.navigation, ul.print, ul.settings {
     display: none;
   }
 
@@ -489,13 +818,13 @@ ul.print {
     display: none;
   }
 }
-/* line 18, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 * {
   box-sizing: border-box;
   text-rendering: optimizelegibility;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 html, body {
   margin: 0;
   padding: 0;
@@ -504,31 +833,36 @@ html, body {
   height: 100%;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
+#area {
+  position: relative;
+}
+
+/* line 40, ../sass/style.scss */
 .uppercased {
   text-transform: uppercase;
 }
 
-/* line 35, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 h1, h2, h3 {
   font-family: "Oswald", "Helvetica Neue", "Arial";
   line-height: 1.5;
   text-transform: uppercase;
 }
 
-/* line 41, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 h2 {
   font-size: 14px;
   text-transform: uppercase;
   color: #00a4de;
 }
 
-/* line 47, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 a {
   color: #00a4de;
 }
 
-/* line 51, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 h3 {
   color: #999999;
   font-weight: 100;
@@ -539,13 +873,13 @@ h3 {
   font-family: "Open Sans", "Helvetica Neue", "Arial";
 }
 
-/* line 60, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 .logo {
   text-align: center;
   color: #00a4de;
 }
 
-/* line 66, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .social-media ul {
   margin: 10px 0;
   padding: 0;
@@ -554,13 +888,13 @@ h3 {
   height: 10px;
   clear: both;
 }
-/* line 73, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .social-media ul li {
   float: left;
   margin: 5px;
 }
 
-/* line 80, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 span.separator {
   content: '\\2666';
 }

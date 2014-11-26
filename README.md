@@ -4,7 +4,7 @@ This application only works with on an (local) server, becauseof e.g. cross orig
 
 #Steps to install
 
-1.	Create a virtuel host (for apache) /path/to/apache2/extra/httpd-vhosts.conf
+-	Create a virtuel host (for apache) /path/to/apache2/extra/httpd-vhosts.conf
 
 ```bash
   # Application
@@ -24,7 +24,7 @@ This application only works with on an (local) server, becauseof e.g. cross orig
   </VirtualHost>
 ```
 
-1.	Add the virtuel domain to hosts file.
+-	Add the virtuel domain to hosts file.
 
 ```
 # Application
@@ -32,12 +32,14 @@ This application only works with on an (local) server, becauseof e.g. cross orig
 127.0.0.1   www.application.inc
 ```
 
-1.	Check and uncomment the Loading Rewrite Module in httpd-conf
+-	Check and uncomment the Loading Rewrite Module in httpd-conf
 
 ```
 LoadModule rewrite_module libexec/apache2/mod_rewrite.so
 ```
 
-1.	Check if your Browser if javascript is enabled
+-	Enable htaccess by prefix htaccess with a dot ".htaccass"
 
-2.	Run the app in the browser under "http://application.inc"
+-	Check if your Browser if javascript is enabled
+
+-	Run the app in the browser under "http://application.inc"

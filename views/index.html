@@ -6,9 +6,11 @@
       <div class="col-xs-12">
         <h1>Bewerbung</h1>
         <h3>als</h3>
-        <h1>{{ index.application.job }}</h1>
+        <h1 ng-hide="!$root.editmode" buttons="no" ng-bind-html="application.job.value" editable-text="application.job.value"></h1>
+        <h1 ng-hide="$root.editmode" buttons="no" ng-bind-html="application.job.value"></h1>
         <h3>bei</h3>
-        <h2>{{ index.application.name }}</h2>
+        <h2 ng-hide="!$root.editmode" buttons="no" ng-bind-html="company.name.value" editable-text="company.name.value"></h2>
+        <h2 ng-hide="$root.editmode" buttons="no" ng-bind-html="company.name.value"></h2>
       </div>
     </div>
     <div class="col-xs-push-7 col-xs-5" style="margin-top: 200px;">

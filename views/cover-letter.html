@@ -5,10 +5,21 @@
     <div class="row">
       <div class="col-xs-6">
         <p>
-          <b class="uppercased">{{ company.name.value }}</b><br>
-            {{ company.address.person.value }}<br>
-            {{ company.address.street.value }}<br>
-            {{ company.address.plz.value }} {{ company.address.city.value }}
+          <b class="uppercased">
+            <span ng-hide="!$root.editmode" buttons="no" ng-bind-html="company.name.value" editable-text="company.name.value"></span>
+            <span ng-hide="$root.editmode" ng-bind-html="company.name.value"></span>
+          </b>
+          <br>
+          <span ng-hide="!$root.editmode" buttons="no" ng-bind-html="company.address.person.value" editable-text="company.address.person.value"></span>
+          <span ng-hide="$root.editmode" ng-bind-html="company.address.person.value"></span>
+          <br>
+          <span ng-hide="!$root.editmode" buttons="no" ng-bind-html="company.address.street.value" editable-text="company.address.street.value"></span>
+          <span ng-hide="$root.editmode" ng-bind-html="company.address.street.value"></span>
+          <br>
+          <span ng-hide="!$root.editmode" buttons="no" ng-bind-html="company.address.plz.value" editable-text="company.address.plz.value"></span>
+          <span ng-hide="$root.editmode" ng-bind-html="company.address.plz.value"></span>
+          <span ng-hide="!$root.editmode" buttons="no" ng-bind-html="company.address.city.value" editable-text="company.address.city.value"></span>
+          <span ng-hide="$root.editmode" ng-bind-html="company.address.city.value"></span>
         </p>
       </div>
       <div class="col-xs-6 text-right">
@@ -22,15 +33,20 @@
         <div class="logo">
           <i class="fa fa-2x fa-home"></i>
         </div>
-        <h3>{{ application.subject.text }}</h3>
-        <p class="title">{{ application.title }}</p>
+        <h3 ng-hide="!$root.editmode" buttons="no" ng-bind-html="application.subject.value" editable-text="application.subject.value"></h3>
+        <h3 ng-hide="$root.editmode" buttons="no" ng-bind-html="application.subject.value"></h3>
+        <p ng-hide="!$root.editmode" class="title" buttons="no" ng-bind-html="application.title" editable-text="application.title"></p>
+        <p ng-hide="$root.editmode" class="title" buttons="no" ng-bind-html="application.title"></p>
         <div class="content">
-          <p ng-repeat="paragraph in application.content">
-            <span ng-bind-html="paragraph" ></span>
-          </p>
+            <div ng-hide="!$root.editmode" href="#" ng-bind-html="application.content" editable-textarea="application.content">
+            </div>
+            <div ng-hide="$root.editmode" href="#" ng-bind-html="application.content">
+            </div>
         </div>
-        <p class="salutation">{{ application.salutation }}</p>
-        <p class="name">{{ application.signing }}</p>
+        <p ng-hide="!$root.editmode" buttons="no" class="salutation" ng-bind-html="application.salutation" editable-text="application.salutation"></p>
+        <p ng-hide="$root.editmode" class="salutation" ng-bind-html="application.salutation"></p>
+        <p ng-hide="!$root.editmode" buttons="no" class="name" ng-bind-html="application.signing" editable-text="application.signing"></p>
+        <p ng-hide="$root.editmode" class="name" ng-bind-html="application.signing"></p>
       </div>
     </div>
   </div>

@@ -3,3 +3,4 @@
 .DS-Store
 js/data/application.js
 images/photo.jpg
+bower_components

@@ -1,11 +1,11 @@
-application.controller('IndexController',
-  function($scope){
-
-    var dataService = window.ObjectManager.getInstance().getSingleton(DataService);
-
-    $scope.index = dataService.get('sites', 'index');
-    $scope.social = dataService.get('social');
-    $scope.person = dataService.get('person');
-
-  }
+application.controller('IndexController',['$scope', '$rootScope', 'DataService',
+  function($scope, $rootScope, DataService){
+    DataService.fetch().then(function(data){
+      $scope.application = data.application;
+      $scope.index = data.index;
+      $scope.company = data.company;
+      $scope.social = data.social;
+      $scope.person = data.person;
+    });
+  }]
 );

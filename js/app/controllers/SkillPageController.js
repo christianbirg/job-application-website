@@ -1,11 +1,11 @@
-application.controller('SkillPageController',
-  function($scope){
+application.controller('SkillPageController',['$scope', '$rootScope', 'DataService',
+  function($scope, $rootScope, DataService){
 
-    var dataService = window.ObjectManager.getInstance().getSingleton(DataService);
+    $scope.application = DataService.fetch().then(function(data){
+      $scope.skills = data.skills;
+      $scope.social = data.social;
+      $scope.person = data.person;
+    });
 
-    $scope.skills = dataService.get('sites', 'skills');
-    $scope.social = dataService.get('social');
-    $scope.person = dataService.get('person');
-
-  }
+  }]
 );
