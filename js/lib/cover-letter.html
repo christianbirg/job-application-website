@@ -1,0 +1,36 @@
+<article id="cover-letter">
+  <ng-include src="'/views/_partials/navigation.html'"></ng-include>
+  <ng-include src="'/views/_partials/header.html'"></ng-include>
+  <div class="application-content">
+    <div class="row">
+      <div class="col-xs-6">
+        <p>
+          <b class="uppercased">{{ company.name.value }}</b><br>
+            {{ company.address.person.value }}<br>
+            {{ company.address.street.value }}<br>
+            {{ company.address.plz.value }} {{ company.address.city.value }}
+        </p>
+      </div>
+      <div class="col-xs-6 text-right">
+        <p>
+          {{ date.city }} {{ date.day }}.{{ date.month }}.{{ date.year}}
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="logo">
+          <i class="fa fa-2x fa-home"></i>
+        </div>
+        <h3>{{ application.subject.text }}</h3>
+        <p class="title">{{ application.title }}</p>
+        <div class="content">
+            <div ng-bind-html="application.content" ></div>
+        </div>
+        <p class="salutation">{{ application.salutation }}</p>
+        <p class="name">{{ application.signing }}</p>
+      </div>
+    </div>
+  </div>
+  <ng-include src="'/views/_partials/footer.html'"></ng-include>
+</article>
