@@ -1,0 +1,76 @@
+ul.navigation, ul.print, ul.settings {
+  z-index: 3000;
+  padding: 0;
+  list-style: none;
+  display: block;
+}
+
+ul.settings {
+  li {
+    margin-bottom: 5px;
+    a {
+      display: block; overflow: hidden; cursor: pointer;
+      border: 2px solid #666; border-radius: 0px;
+      padding-left: 5px;
+      text-transform: uppercase;
+      background-color: #00A4DE; color: #FFFFFF;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+ul.navigation, ul.print {
+  li {
+    border-radius: 2px;
+    display: inline-block;
+    margin-right: 10px;
+    padding: $space;
+    height: 40px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+
+    &:first-child {
+      margin-left: 10px;
+    }
+
+    &:before {
+      width: 20px;
+      height: 20px;
+      display: block;
+      background: green;
+    }
+
+    &:hover {
+      height: 60px;
+    }
+
+    a {
+      text-shadow: 1px 2px 3px black;
+      color: $fourth-color;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+ul.navigation {
+  position: absolute;
+  top: -20px;
+  right: 0px;
+}
+
+ul.settings {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+}
+
+ul.print {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+}

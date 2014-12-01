@@ -1,0 +1,39 @@
+#cover-letter {
+
+  .application-content {
+    .content p {
+      text-align: justify;
+      margin-bottom: $space + $half-space;
+    }
+    p {
+      font-family: $text-font-family;
+      line-height: 1.5;
+    }
+  }
+  .subject {
+    margin: {
+      left: 0;
+      right: 0;
+      top: 4 * $space;
+      bottom: 4 * $space;
+    }
+    color: $third-color;
+    font-weight: bold;
+  }
+  .title {
+    margin: {
+      left: 0;
+      right: 0;
+      top: 2 * $space;
+      bottom: 2 * $space;
+    }
+  }
+  .salutation {
+    margin: {
+      left: 0;
+      right: 0;
+      top: 4 * $space;
+      bottom: 4 * $space;
+    }
+  }
+}

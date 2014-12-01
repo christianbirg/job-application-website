@@ -1,0 +1,21 @@
+{
+  "name": "Christian Birg",
+  "description": "Application Generator",
+  "version": "1.0.1",
+  "homepage": "incoqnito.de",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "~1.2.1",
+    "jquery": "~2.1.1",
+    "angular-route": "~1.2.1",
+    "angular-sanitize": "~1.2.1",
+    "angular-xeditable": "~0.1.8",
+    "requirejs": "~2.1.9",
+    "requirejs-text": "~2.0.10",
+    "bootstrap-sass-official": "~3.3.1"
+  }
+}

@@ -1,0 +1,357 @@
+{
+  "company": {
+    "name": {
+      "value": "wissenswerft GmbH"
+    },
+    "address": {
+      "person": {
+        "value": "z.H. Tim Rademacher"
+      },
+      "street": {
+        "value": "EXPO Plaza 1"
+      },
+      "plz": {
+        "value": "D - 30539"
+      },
+      "city": {
+        "value": "Hannover"
+      }
+    }
+  },
+  "date": {
+    "city": "Hannover, den",
+    "day": "20",
+    "month": "11",
+    "year": "2014"
+  },
+  "person": {
+    "icon": "glyphicon glyphicon-user",
+    "name": {
+      "value": "Birg"
+    },
+    "forename": {
+      "value": "Christian"
+    },
+    "portrait": {
+      "src": "images/photo.jpg",
+      "klass": "img-circle"
+    },
+    "address": {
+      "fullName": {
+        "value": "Christian Birg",
+        "klass": "glyphicon glyphicon-user"
+      },
+      "telephone": {
+        "value": "0177 9651165",
+        "klass": "glyphicon glyphicon-phone"
+      },
+      "email": {
+        "value": "christian.birg@gmail.com",
+        "klass": "glyphicon glyphicon-envelope"
+      },
+      "street": {
+        "value": "Dohmeyers Weg 10A",
+        "klass": "glyphicon glyphicon-home"
+      },
+      "plz": {
+        "value": "30625 Hannover",
+        "klass": "glyphicon glyphicon-map-marker"
+      }
+    }
+  },
+  "social": {
+    "entries": [
+      {
+        "name": "XING",
+        "href": "https://www.xing.com/profile/Christian_Birg",
+        "color": "#006464",
+        "klass": "fa fa-xing",
+        "target": "_blank"
+      },
+      {
+        "name": "Github",
+        "href": "https://github.com/incoqnito",
+        "color": "#333333",
+        "klass": "fa fa-github",
+        "target": "_blank"
+      }
+    ]
+  },
+  "application": {
+    "job": {
+      "value": "Frontend Developer"
+    },
+    "subject": {
+      "value": "Bewerbung als Frontend Developer",
+      "icon": "fa fa-angle-double-down"
+    },
+    "title": "Sehr geehrter Herr Rademacher,",
+    "content": "durch einen ehemaligen Praktikanten bin ich auf Ihr Unternehmen aufmerksam geworden. Der Besuch auf Ihrer Internetseite hat mein Interesse an Ihrem Unternehmen geweckt und daher möchte ich bei Ihnen mit einer Initiativbewerbung auf die oben genannte Stelle bewerben.</p>Ich habe den erweiterten Sekundarabschluss erlangt und absolvierte im Anschluss eine schulische Ausbildung zum „Staatlich geprüften technischen Assistenten für Informatik“. Im Anschluss darauf folgte die Fachhochschulreife Fachrichtung Technik.Im Sommer 2014 habe ich dann meine Ausbildung zum Fachinformatiker für Anwendungsentwicklung erfolgreich abgeschlossen, woraufhin ich von meiner Ausbildungsstätte übernommen wurde und die Stelle des Junior Front End Developers / JavaScript Application Developers wahrgenommen habe. Eine finanzielle Notlage resultierend aus den Liquiditätsproblemen der Firma zwang mich zu der Entscheidung die Firma zu verlassen.</p>Ich sehe meine Fähigkeiten in der Web Entwicklung - speziell im Bereich der Front End Entwicklung - und beherrsche ein breites Spektrum an Web-Technologien die ich nach Möglichkeit weiter ausbauen möchte. Dennoch konnte ich auch sehr viel Erfahrung in der Backend / API Entwicklung gewinnen.</p>Zu meinen Stärken zählen Aufmerksamkeit, Flexibilität und Teamfähigkeit. Eine Eigenschaft, die mir oft als Laster anerkannt wird, ist meine Zielstrebigkeit. Treten Probleme auf, bin ich nahezu gezwungen diese zu beheben, ohne dabei die Motivation zu verlieren. Meine Arbeit erledige ich schnell und gewissenhaft.</p>Klingt das interessant für Sie? Dann sehen Sie meine weiteren Unterlagen durch und laden mich zu einem persönlichen Gespräch ein. Ich freue mich darauf</p>",
+    "salutation": "Mit freundlichen Grüßen",
+    "signing": "Christian Birg"
+  },
+  "index": {
+    "id": "index",
+    "assets": [
+      {
+        "name": "Anschreiben",
+        "href": "/cover-letter",
+        "target": ""
+      },
+      {
+        "name": "Lebenslauf",
+        "href": "/curriculum-vitae",
+        "target": ""
+      },
+      {
+        "name": "Fähigkeiten",
+        "href": "/skill-page",
+        "target": ""
+      },
+      {
+        "name": "Zeugnis Ausbildung Jahr 3",
+        "href": "assets/ausbildungsjahr_drei.png",
+        "target": "_blank"
+      },
+      {
+        "name": "IHK Prüfungszeugniskopie",
+        "href": "assets/ihk_abschluss.png",
+        "target": "_blank"
+      },
+      {
+        "name": "Letztes Arbeitszeugnis",
+        "href": "assets/zwischenzeugnis.pdf",
+        "target": "_blank"
+      }
+    ]
+  },
+  "curriculumVitae": {
+    "events": [
+      {
+        "name": "Berufsweg",
+        "icon": "fa-rocket",
+        "ticks": [
+          {
+            "name": "THIS IS! Digital Media Group GmbH",
+            "begin": "01.07.2014",
+            "end": "31.10.2014",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "name": "Ausbildung",
+        "icon": "fa-institution",
+        "ticks": [
+          {
+            "name": "THIS IS! Digital Media Group GmbH",
+            "begin": "01.09.2012",
+            "end": "30.06.2014",
+            "text": "Abschluss:</strong> Fachinformatiker für Anwendungsentwicklung"
+          },
+          {
+            "name": "Höft & Wessel AG",
+            "begin": "01.08.2011",
+            "end": "31.08.2012",
+            "text": "Beginn der Ausbildung"
+          }
+        ]
+      },
+      {
+        "name": "Schullaufbahn",
+        "icon": "fa-graduation-cap",
+        "ticks": [
+          {
+            "name": "Fachhochschule. BBS-ME Otto Brenner-Schule",
+            "begin": 2010,
+            "end": 2011,
+            "text": "Abschluss:</strong> Fachhochschulreife"
+          },
+          {
+            "name": "Berufschule, BBS-ME Otto Brenner-Schule",
+            "begin": 2008,
+            "end": 2010,
+            "text": "Abschluss:</strong> Staatlich geprüfter Assistent für Informatik"
+          },
+          {
+            "name": "Realschule, Ludwig-Windthorst-Schule",
+            "begin": 2004,
+            "end": 2008,
+            "text": "Abschluss:</strong> Erweiterter Sekundarabschluss I"
+          }
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "skillSections": [
+      {
+        "name": "Web Skills",
+        "icon": "fa-globe",
+        "skillTable": [
+          {
+            "name": "Computersprachen",
+            "skills": [
+              {
+                "name": "JavaScript",
+                "range": 5
+              },
+              {
+                "name": "PHP",
+                "range": 2.5
+              },
+              {
+                "name": "Ruby",
+                "range": 2
+              },
+              {
+                "name": "(My)SQL",
+                "range": 4
+              }
+            ]
+          },
+          {
+            "name": "Frameworks",
+            "skills": [
+              {
+                "name": "Node.js",
+                "range": 3
+              },
+              {
+                "name": "Angular.js",
+                "range": 4
+              },
+              {
+                "name": "jQuery",
+                "range": 5
+              },
+              {
+                "name": "Ruby on Rails",
+                "range": 4
+              }
+            ]
+          },
+          {
+            "name": "Technologien",
+            "skills": [
+              {
+                "name": "HTML5",
+                "range": 4.5
+              },
+              {
+                "name": "CSS/3",
+                "range": 4.5
+              },
+              {
+                "name": "SASS/LESS/Stylus",
+                "range": 4.5
+              },
+              {
+                "name": "Android",
+                "range": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Software Skills",
+        "icon": "fa-pencil",
+        "skillTable": [
+          {
+            "name": "OS & CMS",
+            "skills": [
+              {
+                "name": "Wordpress",
+                "range": 4
+              },
+              {
+                "name": "Joomla",
+                "range": 3
+              },
+              {
+                "name": "Typo 3",
+                "range": 2
+              }
+            ]
+          },
+          {
+            "name": "Produktion",
+            "skills": [
+              {
+                "name": "JIRA/Confluence",
+                "range": 5
+              },
+              {
+                "name": "Git/Gitflow",
+                "range": 5
+              }
+            ]
+          },
+          {
+            "name": "Design",
+            "skills": [
+              {
+                "name": "Adobe Photoshop",
+                "range": 2.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soft Skills",
+        "icon": "fa-user",
+        "skillTable": [
+          {
+            "name": "Soft Skills",
+            "skills": [
+              {
+                "name": "Flexibilität",
+                "range": 5
+              },
+              {
+                "name": "Teamfähigkeit",
+                "range": 5
+              },
+              {
+                "name": "Ehrgeiz",
+                "range": 5
+              }
+            ]
+          },
+          {
+            "name": "Eigenschaften",
+            "skills": [
+              {
+                "name": "100% geben",
+                "range": 5
+              },
+              {
+                "name": "Erfolgsorientiert",
+                "range": 5
+              },
+              {
+                "name": "Aufgeben",
+                "range": 0
+              }
+            ]
+          },
+          {
+            "name": "Sprachen",
+            "skills": [
+              {
+                "name": "Deutsch",
+                "range": 5
+              },
+              {
+                "name": "Englisch",
+                "range": 3.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

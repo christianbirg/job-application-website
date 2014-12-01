@@ -1,0 +1,46 @@
+#loading-overlay {
+  background: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 99999;
+  display: none;
+}
+
+.spinner-wrapper {
+  position: fixed;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  margin: auto;
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  background: $secondary-color;
+
+  margin: 0 auto;
+  -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+  animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes rotateplane {
+  0% {
+    transform: perspective(100px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  } 50% {
+    transform: perspective(100px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  } 100% {
+    transform: perspective(100px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
