@@ -8,34 +8,26 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<base href="/"/>
-	<link rel="stylesheet" href="css/bootstrap.min.css" title="no title" charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" title="no title">
-	<link rel="stylesheet" type="text/css" href="css/style.css" title="no title">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
-	<div id="area">
-		<ng-view></ng-view>
-		<ul class="settings">
-			<li class="">
-				<div class="onoffswitch">
-					<input type="checkbox" name="onoffswitch" ng-change="$root.switchMode()" ng-model="$root.editmode" class="onoffswitch-checkbox" id="myonoffswitch">
-					<label class="onoffswitch-label" for="myonoffswitch">
-						<span class="onoffswitch-inner"></span>
-						<span class="onoffswitch-switch"></span>
-					</label>
-				</div>
-			</li>
-			<li>
-				<a href="#">Import</a>
-			</li>
-			<li>
-				<a href="assets/application.json" target="_blank">Export</a>
-			</li>
-		</ul>
-	</div>
+	<ul class="settings">
+		<li class="">
+			<div class="onoffswitch">
+				<input type="checkbox" name="onoffswitch" ng-change="$root.switchMode()" ng-model="$root.editmode" class="onoffswitch-checkbox" id="myonoffswitch">
+				<label class="onoffswitch-label" for="myonoffswitch">
+					<span class="onoffswitch-inner"></span>
+					<span class="onoffswitch-switch"></span>
+				</label>
+			</div>
+		</li>
+	</ul>
+	<ng-view></ng-view>
 	<div id="loading-overlay">
 		<div class="spinner-wrapper">
 			<div class="spinner"></div>

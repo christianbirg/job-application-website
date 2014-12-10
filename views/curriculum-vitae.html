@@ -1,20 +1,22 @@
-<article id="curriculum-vitae">
-  <ng-include src="'/views/_partials/navigation.html'"></ng-include>
-  <ng-include src="'/views/_partials/header.html'"></ng-include>
-  <div class="application-content">
-    <div ng-repeat="section in curriculum.events">
-      <div class="curriculum-section row">
-        <div class="col-xs-12">
-          <div class="logo">
-            <i class="fa {{ section.icon }} fa-2x"></i>
+<section id="area">
+  <article id="curriculum-vitae">
+    <ng-include src="'/views/_partials/navigation.html'"></ng-include>
+    <ng-include src="'/views/_partials/header.html'"></ng-include>
+    <div class="application-content">
+      <div ng-repeat="section in curriculum.events">
+        <div class="curriculum-section row">
+          <div class="col-xs-12">
+            <div class="logo">
+              <i class="fa {{ section.icon }} fa-2x"></i>
+            </div>
+            <h3>{{ section.name }}</h3>
           </div>
-          <h3>{{ section.name }}</h3>
-        </div>
-        <div class="col-xs-12">
-          <timeline></timeline>
+          <div class="col-xs-12">
+            <timeline></timeline>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <ng-include src="'/views/_partials/footer.html'"></ng-include>
-</article>
+    <ng-include src="'/views/_partials/footer.html'"></ng-include>
+  </article>
+</section>

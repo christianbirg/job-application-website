@@ -1,29 +1,41 @@
 {
   "company": {
     "name": {
-      "value": "wissenswerft GmbH"
+      "value": "aam it GmbH"
     },
     "address": {
       "person": {
-        "value": "z.H. Tim Rademacher"
+        "value": "z.H. Jürgen Hofmann"
       },
       "street": {
-        "value": "EXPO Plaza 1"
+        "value": "EPodbielskistr. 333"
       },
       "plz": {
-        "value": "D - 30539"
+        "value": "D-30659"
       },
       "city": {
         "value": "Hannover"
       }
     }
   },
-  "date": {
-    "city": "Hannover, den",
-    "day": "20",
-    "month": "11",
-    "year": "2014"
-  },
+  "sites": [
+    {
+      "name": "Deckblatt",
+      "tabId": "deckblatt"
+    },
+    {
+      "name": "Anschreiben",
+      "tabId": "anschreiben"
+    },
+    {
+      "name": "Lebenslauf",
+      "tabId": "lebenslauf"
+    },
+    {
+      "name": "Fähigkeiten",
+      "tabId": "skills"
+    }
+  ],
   "person": {
     "icon": "glyphicon glyphicon-user",
     "name": {
@@ -54,7 +66,11 @@
         "klass": "glyphicon glyphicon-home"
       },
       "plz": {
-        "value": "30625 Hannover",
+        "value": "30625",
+        "klass": "glyphicon glyphicon-map-marker"
+      },
+      "city": {
+        "value": "Hannover",
         "klass": "glyphicon glyphicon-map-marker"
       }
     }
@@ -65,6 +81,7 @@
         "name": "XING",
         "href": "https://www.xing.com/profile/Christian_Birg",
         "color": "#006464",
+        "tooltip": "Xing Profile",
         "klass": "fa fa-xing",
         "target": "_blank"
       },
@@ -72,21 +89,30 @@
         "name": "Github",
         "href": "https://github.com/incoqnito",
         "color": "#333333",
+        "tooltip": "Github Account",
         "klass": "fa fa-github",
+        "target": "_blank"
+      },
+      {
+        "name": "Incoqnito",
+        "href": "http://incoqnito.de/",
+        "color": "#768",
+        "tooltip": "My Website",
+        "klass": "fa fa-globe",
         "target": "_blank"
       }
     ]
   },
   "application": {
     "job": {
-      "value": "Frontend Developer"
+      "value": "Frontend Entwickler (m/w)"
     },
     "subject": {
-      "value": "Bewerbung als Frontend Developer",
+      "value": "Bewerbung als Frontend Entwickler (m/w)",
       "icon": "fa fa-angle-double-down"
     },
     "title": "Sehr geehrter Herr Rademacher,",
-    "content": "durch einen ehemaligen Praktikanten bin ich auf Ihr Unternehmen aufmerksam geworden. Der Besuch auf Ihrer Internetseite hat mein Interesse an Ihrem Unternehmen geweckt und daher möchte ich bei Ihnen mit einer Initiativbewerbung auf die oben genannte Stelle bewerben.</p>Ich habe den erweiterten Sekundarabschluss erlangt und absolvierte im Anschluss eine schulische Ausbildung zum „Staatlich geprüften technischen Assistenten für Informatik“. Im Anschluss darauf folgte die Fachhochschulreife Fachrichtung Technik.Im Sommer 2014 habe ich dann meine Ausbildung zum Fachinformatiker für Anwendungsentwicklung erfolgreich abgeschlossen, woraufhin ich von meiner Ausbildungsstätte übernommen wurde und die Stelle des Junior Front End Developers / JavaScript Application Developers wahrgenommen habe. Eine finanzielle Notlage resultierend aus den Liquiditätsproblemen der Firma zwang mich zu der Entscheidung die Firma zu verlassen.</p>Ich sehe meine Fähigkeiten in der Web Entwicklung - speziell im Bereich der Front End Entwicklung - und beherrsche ein breites Spektrum an Web-Technologien die ich nach Möglichkeit weiter ausbauen möchte. Dennoch konnte ich auch sehr viel Erfahrung in der Backend / API Entwicklung gewinnen.</p>Zu meinen Stärken zählen Aufmerksamkeit, Flexibilität und Teamfähigkeit. Eine Eigenschaft, die mir oft als Laster anerkannt wird, ist meine Zielstrebigkeit. Treten Probleme auf, bin ich nahezu gezwungen diese zu beheben, ohne dabei die Motivation zu verlieren. Meine Arbeit erledige ich schnell und gewissenhaft.</p>Klingt das interessant für Sie? Dann sehen Sie meine weiteren Unterlagen durch und laden mich zu einem persönlichen Gespräch ein. Ich freue mich darauf</p>",
+    "content": "<p>ich bin über die Jobbörse der Arbeitsagentur (<a href='https://jobboerse.arbeitsagentur.de/vamJB/stellenangeboteFinden.html;jsessionid=8MLxJLyTJgPyPYs3c29ZNTW4fnmWc2TrwQ693dyvjsBHmhR7k4t9!-519061541?&benc=gZekRioJ2uzuWrJEQ7esqXcB7ly8BnHDYguKg3J9jCkfkiP8PbXpWg%3D%3D&benc=T04d33IpqoYXR0nOLC8YKV58FrIMZghQK16Ec0fs9tKQv2%2F2ufxo5YO59wI3b5sioV%2F4snMxea4%3D&benc=Ms4nZv%2BTcXlgTae%2FUAhgXZxTsGsl1Xo6%2FE13qmZJPy0bCdK2e7AhJDRWm0JnW9hK7m9wsJCPwF%2BZI6MgRzHn0focJyIUZUXzRMpDY01LOuo%3D&benc=aAH9Kn5ZAk2Ev9uT9R6QBvxOJbKqq7P06a0CMHdBAZHWsec6BXCByw%3D%3D' target='_blank'>Link</a>) auf Sie aufmerksam geworden. Das Durchlesen des Stellenangebots hat mein Interesse geweckt deshalb will ich mich bei Ihnen auf Stelle des Frontend Entwicklers (m/w) bewerben.</p><p>Im Sommer 2014 habe ich dann meine Ausbildung zum Fachinformatiker für Anwendungsentwicklung erfolgreich abgeschlossen, woraufhin ich von meiner Ausbildungsstätte übernommen wurde und die Stelle des Junior Frontend Developers / JavaScript Application Developers wahrgenommen habe.</p><p>Ich sehe meine Fähigkeiten in der Web Entwicklung - speziell im Bereich der Frontend Entwicklung - und beherrsche ein breites Spektrum an Web-Technologien die ich nach Möglichkeit weiter ausbauen möchte. Ich habe an diversen komplexen Vertriebstools im Pharmabereich auf Basis von Javascript, SASS und HTML5 mitentwickelt und anderem auch eine Realisierung eines Pushservers mittels Node.js. Dennoch konnte ich auch sehr viel Erfahrung in der Backend / API Entwicklung mittels PHP und Ruby on Rails gewinnen.</p><p>Zu meinen Stärken zählen Aufmerksamkeit, Flexibilität und Teamfähigkeit. Eine Eigenschaft, die mir oft als Laster anerkannt wird, ist meine Zielstrebigkeit. Treten Probleme auf, bin ich nahezu gezwungen diese zu beheben, ohne dabei die Motivation zu verlieren. Meine Arbeit erledige ich schnell und gewissenhaft.</p><p>Um einen kleinen Einblick in meine Fähigkeiten zugeben, habe ich den Quellcode dieser Bewerbung beigefügt.</p><p>Meinen beruflichen Qualifikationen entsprechend empfinde ich ein Gehalt von 30.000 Euro als angemessen. Klingt das interessant für Sie? Dann sehen Sie meine weiteren Unterlagen durch und laden mich zu einem persönlichen Gespräch ein. Ich freue mich darauf</p>",
     "salutation": "Mit freundlichen Grüßen",
     "signing": "Christian Birg"
   },

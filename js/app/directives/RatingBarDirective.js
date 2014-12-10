@@ -1,9 +1,9 @@
-define(['app'], function(app) {
+define(['jquery', 'app'], function($, app) {
   app.directive('ratingBar', function() {
     return {
       restrict: 'E',
       link: function (scope, element, attrs) {
-        window.setTimeout(function() {
+        scope.$watch(function() {
           var rangeValue = +attrs.range;
           var maxRange = 5;
           var ul = document.createElement('ul');
@@ -21,8 +21,8 @@ define(['app'], function(app) {
 
             ul.appendChild(li);
           }
-          element.html(ul);
-        }, 1)
+          $(element).html(ul);
+        })
       }
     }
   })

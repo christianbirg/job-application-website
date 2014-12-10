@@ -1,6 +1,6 @@
 'use strict';
 
-define(['angular', 'app', 'controllers/IndexController', 'controllers/CurriculumController', 'controllers/ApplicationController', 'controllers/SkillPageController'], function(angular, app) {
+define(['angular', 'app'], function(angular, app) {
 
 	return app.config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider) {
 
@@ -23,7 +23,7 @@ define(['angular', 'app', 'controllers/IndexController', 'controllers/Curriculum
 		})
 		.otherwise('/');
 
-		//$locationProvider.html5Mode(true);
+		$locationProvider.html5Mode(true).hashPrefix('!');
 
 	}])
 

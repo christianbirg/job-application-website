@@ -3,6 +3,7 @@
 require.config({
 	paths: {
 		jquery: '../../libs/jquery/dist/jquery.min',
+		//ui: '../../libs/jquery-ui/jquery-ui.min',
 		bootstrap: '../../libs/bootstrap-sass-official/assets/javascripts/bootstrap',
 		angular: '../../libs/angular/angular',
 		angularRoute: '../../libs/angular-route/angular-route.min',
@@ -13,6 +14,7 @@ require.config({
 	shim: {
 		'angular' : {'exports' : 'angular'},
 		'jquery' : {'exports' : '$'},
+		//'ui': ['jquery'],
 		'bootstrap': ['jquery'],
 		'angularRoute': ['angular'],
 		'angularSanitize': ['angular'],
@@ -20,7 +22,7 @@ require.config({
 
 	},
 	priority: [
-		"angular", "jquery"
+		"angular", "jquery", "bootstrap"
 	]
 });
 
@@ -30,8 +32,9 @@ require( [
 	'angular',
 	'app',
 	'init',
-	'routes'
-], function(angular, app, init, routes) {
+	'routes',
+	'bootstrap'
+], function(angular, app, init, routes, bootstrap) {
 	var $html = angular.element(document.getElementsByTagName('html')[0]);
 
 	angular.element().ready(function() {

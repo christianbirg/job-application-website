@@ -7,7 +7,7 @@
         <div class="social-media">
           <ul>
             <li ng-repeat="entry in social.entries">
-              <a ng-href="{{ entry.href }}" target="{{ entry.target }}">
+              <a ng-href="{{ entry.href }}" target="{{ entry.target }}" tooltip="tooltip" data-placement="top" title="{{ entry.tooltip }}">
                 <i class="{{ entry.klass }}" style="color: {{ entry.color }} !important;"></i>
               </a>
             </li>
@@ -25,7 +25,7 @@
         <p>
           <span>{{ person.address.fullName.value }}</span><i class="{{ person.address.fullName.klass }}"></i><br>
           <span>{{ person.address.street.value }}</span><i class="{{ person.address.street.klass }}"></i><br>
-          <span>{{ person.address.plz.value }}</span><i class="{{ person.address.plz.klass }}"></i><br>
+          <span>{{ person.address.plz.value }} {{ person.address.city.value }}</span><i class="{{ person.address.plz.klass }}"></i><br>
           <span>{{ person.address.email.value }}</span><i class="{{ person.address.email.klass }}"></i><br>
           <span>{{ person.address.telephone.value }}</span><i class="{{ person.address.telephone.klass }}"></i>
         </p>

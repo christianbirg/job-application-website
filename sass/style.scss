@@ -88,6 +88,21 @@ h3 {
   }
 }
 
+div {
+  &.spacer-40 {
+    padding: $space * 2;
+  }
+  &.spacer-20 {
+    padding: $space;
+  }
+  &.spacer-10 {
+    padding: $space / 2;
+  }
+  &.spacer-5 {
+    padding: $half-space / 2;
+  }
+}
+
 span.separator {
   content: '\\2666';
 }

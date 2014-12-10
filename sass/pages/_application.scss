@@ -11,29 +11,7 @@
     }
   }
   .subject {
-    margin: {
-      left: 0;
-      right: 0;
-      top: 4 * $space;
-      bottom: 4 * $space;
-    }
     color: $third-color;
     font-weight: bold;
-  }
-  .title {
-    margin: {
-      left: 0;
-      right: 0;
-      top: 2 * $space;
-      bottom: 2 * $space;
-    }
-  }
-  .salutation {
-    margin: {
-      left: 0;
-      right: 0;
-      top: 4 * $space;
-      bottom: 4 * $space;
-    }
   }
 }
