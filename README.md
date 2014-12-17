@@ -1,8 +1,36 @@
 #Requirements
 
-This application only works with on an (local) server, becauseof e.g. cross origins.
+This application only works with on an (local) server, becauseof e.g. cross origins and Node.js and your browser must enable javascript.
 
 #Steps to install
+
+-	Run following command lines in the terminal
+
+```bash
+  # run without global param -g in the root directory of the project
+  npm install [-g] bower
+  # run in the root directory of the project
+  bower install
+
+```
+
+##Simple install process
+
+-	Enable bower config by prefix bowerrc with a dot ".bowerrc"
+
+```bash
+mv bowerrc .bowerrc
+```
+
+-	Run following command in the terminal
+
+```bash
+node webserver.js
+```
+
+-	Open app in the browser http://localhost:8000/
+
+##Other install process
 
 -	Create a virtuel host (for apache) /path/to/apache2/extra/httpd-vhosts.conf
 
@@ -40,6 +68,8 @@ LoadModule rewrite_module libexec/apache2/mod_rewrite.so
 
 -	Enable htaccess by prefix htaccess with a dot ".htaccass"
 
--	Check if your Browser if javascript is enabled
+```bash
+mv htaccess .htaccess
+```
 
 -	Run the app in the browser under "http://application.inc"

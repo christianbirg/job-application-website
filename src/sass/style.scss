@@ -1,0 +1,108 @@
+@import 'variables.scss';
+@import 'page.scss';
+@import 'navigation.scss';
+
+@import 'pages/index.scss';
+@import 'pages/application.scss';
+@import 'pages/curriculum.scss';
+@import 'pages/skill.scss';
+
+@import 'components/timeline.scss';
+@import 'components/ratingbar.scss';
+@import 'components/onoffswitch.scss';
+@import 'components/editmode.scss';
+@import 'components/loading.scss';
+
+@import 'xeditable.scss';
+
+@import 'print.scss';
+
+* {
+  box-sizing: border-box;
+  text-rendering: optimizelegibility;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: $background-color;
+  width: 100%;
+  height: 100%;
+}
+
+#area {
+  position: relative;
+}
+
+.uppercased {
+  text-transform: uppercase;
+}
+
+h1, h2, h3 {
+  font-family: $headline-font-family;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: $large-font-size;
+  text-transform: uppercase;
+  color: $secondary-color;
+}
+
+a {
+  color: $secondary-color;
+}
+
+h3 {
+  color: $third-color;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 6px;
+  letter-spacing: 2;
+  font-size: $large-font-size;
+  font-family: $text-font-family;
+}
+.logo {
+  text-align: center;
+  color: $secondary-color;
+}
+
+.social-media {
+  ul {
+    margin: $space 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    height: 10px;
+    clear: both;
+    li {
+      float: left;
+      margin: $half-space;
+    }
+  }
+}
+
+div {
+  &.spacer-40 {
+    padding: $space * 2;
+  }
+  &.spacer-20 {
+    padding: $space;
+  }
+  &.spacer-10 {
+    padding: $space / 2;
+  }
+  &.spacer-5 {
+    padding: $half-space / 2;
+  }
+}
+
+span.separator {
+  content: '\\2666';
+}
+
+hr {
+  margin-top: $space*2;
+  margin-bottom: $space*2;
+}

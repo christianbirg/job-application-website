@@ -1,0 +1,383 @@
+{
+  "company": {
+    "name": {
+      "value": "aam it GmbH"
+    },
+    "address": {
+      "person": {
+        "value": "z.H. Jürgen Hofmann"
+      },
+      "street": {
+        "value": "Podbielskistr. 333"
+      },
+      "plz": {
+        "value": "D-30659"
+      },
+      "city": {
+        "value": "Hannover"
+      }
+    }
+  },
+  "sites": [
+    {
+      "name": "Deckblatt",
+      "tabId": "deckblatt"
+    },
+    {
+      "name": "Anschreiben",
+      "tabId": "anschreiben"
+    },
+    {
+      "name": "Lebenslauf",
+      "tabId": "lebenslauf"
+    },
+    {
+      "name": "Fähigkeiten",
+      "tabId": "skills"
+    }
+  ],
+  "person": {
+    "icon": "glyphicon glyphicon-user",
+    "name": {
+      "value": "Birg"
+    },
+    "forename": {
+      "value": "Christian"
+    },
+    "portrait": {
+      "src": "images/photo.jpg",
+      "klass": "img-circle"
+    },
+    "address": {
+      "fullName": {
+        "value": "Christian Birg",
+        "klass": "glyphicon glyphicon-user"
+      },
+      "telephone": {
+        "value": "0177 9651165",
+        "klass": "glyphicon glyphicon-phone"
+      },
+      "email": {
+        "value": "christian.birg@gmail.com",
+        "klass": "glyphicon glyphicon-envelope"
+      },
+      "street": {
+        "value": "Dohmeyers Weg 10A",
+        "klass": "glyphicon glyphicon-home"
+      },
+      "plz": {
+        "value": "30625",
+        "klass": "glyphicon glyphicon-map-marker"
+      },
+      "city": {
+        "value": "Hannover",
+        "klass": "glyphicon glyphicon-map-marker"
+      }
+    }
+  },
+  "social": {
+    "entries": [
+      {
+        "name": "XING",
+        "href": "https://www.xing.com/profile/Christian_Birg",
+        "color": "#006464",
+        "tooltip": "Xing Profile",
+        "klass": "fa fa-xing",
+        "target": "_blank"
+      },
+      {
+        "name": "Github",
+        "href": "https://github.com/incoqnito",
+        "color": "#333333",
+        "tooltip": "Github Account",
+        "klass": "fa fa-github",
+        "target": "_blank"
+      },
+      {
+        "name": "Incoqnito",
+        "href": "http://incoqnito.de/",
+        "color": "#768",
+        "tooltip": "My Website",
+        "klass": "fa fa-globe",
+        "target": "_blank"
+      }
+    ]
+  },
+  "application": {
+    "job": {
+      "value": "Frontend Entwickler (m/w)"
+    },
+    "subject": {
+      "value": "Bewerbung als Frontend Entwickler (m/w)",
+      "icon": "fa fa-angle-double-down"
+    },
+    "title": "Sehr geehrter Herr Hofmann,",
+    "content": "<p>ich bin über die Jobbörse der Arbeitsagentur (Ref.Nr.: <a href='https://jobboerse.arbeitsagentur.de/vamJB/stellenangeboteFinden.html;jsessionid=8MLxJLyTJgPyPYs3c29ZNTW4fnmWc2TrwQ693dyvjsBHmhR7k4t9!-519061541?&benc=gZekRioJ2uzuWrJEQ7esqXcB7ly8BnHDYguKg3J9jCkfkiP8PbXpWg%3D%3D&benc=T04d33IpqoYXR0nOLC8YKV58FrIMZghQK16Ec0fs9tKQv2%2F2ufxo5YO59wI3b5sioV%2F4snMxea4%3D&benc=Ms4nZv%2BTcXlgTae%2FUAhgXZxTsGsl1Xo6%2FE13qmZJPy0bCdK2e7AhJDRWm0JnW9hK7m9wsJCPwF%2BZI6MgRzHn0focJyIUZUXzRMpDY01LOuo%3D&benc=aAH9Kn5ZAk2Ev9uT9R6QBvxOJbKqq7P06a0CMHdBAZHWsec6BXCByw%3D%3D' target='_blank'>10000-1120803589-S</a>) auf Sie aufmerksam geworden. Das Durchlesen des Stellenangebots hat mein Interesse geweckt, daher will ich mich bei Ihnen auf die Stelle des Frontend Entwicklers bewerben.</p><p>Im Sommer 2014 habe ich meine Ausbildung zum Fachinformatiker für Anwendungsentwicklung erfolgreich abgeschlossen, woraufhin ich von meiner Ausbildungsstätte übernommen wurde und die Stelle des Junior Frontend Developers / JavaScript Application Developers wahr nahm.</p><p>Ich sehe meine Fähigkeiten in der Web Entwicklung - speziell im Bereich der Frontend Entwicklung - und beherrsche ein breites Spektrum an Web-Technologien, die ich nach Möglichkeit weiter ausbauen möchte. Ich habe an mehreren komplexen Vertriebstools im Pharmaziebereich auf Basis von Javascript, SASS und HTML5 mitgewirkt und unteranderem die Realisierung eines Pushservers mittels Node.js. Dennoch konnte ich viele Erfahrungen in der Backend / API-Entwicklung mittels PHP und Ruby on Rails gewinnen.</p><p>Zu meinen Stärken zählen Aufmerksamkeit, Flexibilität und Teamfähigkeit. Eine Eigenschaft, die mir oft als Laster zugesprochen wird, ist meine Zielstrebigkeit. Bei Problemstellungen bin ich stets bemüht, diese zu lösen, ohne dabei die Motivation zu verlieren. Meine Arbeit erledige ich schnell und gewissenhaft.</p><p>Um einen kleinen Einblick in meine Fähigkeiten zugeben, habe ich den Quellcode dieser Bewerbung beigefügt.</p><p>Meinen beruflichen Qualifikationen entsprechend empfinde ich ein jährliches Gehalt von 30.000 Euro Brutto als angemessen. Klingt das interessant für Sie? Dann sehen Sie meine weiteren Unterlagen durch und laden mich zu einem persönlichen Gespräch ein. Ich freue mich darauf!</p>",
+    "salutation": "Mit freundlichen Grüßen",
+    "signing": "Christian Birg"
+  },
+  "index": {
+    "id": "index",
+    "assets": [
+      {
+        "name": "Anschreiben",
+        "href": "/cover-letter",
+        "target": ""
+      },
+      {
+        "name": "Lebenslauf",
+        "href": "/curriculum-vitae",
+        "target": ""
+      },
+      {
+        "name": "Fähigkeiten",
+        "href": "/skill-page",
+        "target": ""
+      },
+      {
+        "name": "Zeugnis Ausbildung Jahr 3",
+        "href": "assets/ausbildungsjahr_drei.png",
+        "target": "_blank"
+      },
+      {
+        "name": "IHK Prüfungszeugniskopie",
+        "href": "assets/ihk_abschluss.png",
+        "target": "_blank"
+      },
+      {
+        "name": "Letztes Arbeitszeugnis",
+        "href": "assets/zwischenzeugnis.pdf",
+        "target": "_blank"
+      }
+    ]
+  },
+  "curriculumVitae": {
+    "events": [
+      {
+        "name": "Berufsweg",
+        "icon": "fa-rocket",
+        "ticks": [
+          {
+            "name": "THIS IS! Digital Media Group GmbH",
+            "begin": "01.07.2014",
+            "end": "31.10.2014",
+            "text": ""
+          }
+        ]
+      },
+      {
+        "name": "Ausbildung",
+        "icon": "fa-institution",
+        "ticks": [
+          {
+            "name": "THIS IS! Digital Media Group GmbH",
+            "begin": "01.09.2012",
+            "end": "30.06.2014",
+            "text": "Abschluss:</strong> Fachinformatiker für Anwendungsentwicklung"
+          },
+          {
+            "name": "Höft & Wessel AG",
+            "begin": "01.08.2011",
+            "end": "31.08.2012",
+            "text": "Beginn der Ausbildung"
+          }
+        ]
+      },
+      {
+        "name": "Schullaufbahn",
+        "icon": "fa-graduation-cap",
+        "ticks": [
+          {
+            "name": "Fachhochschule. BBS-ME Otto Brenner-Schule",
+            "begin": 2010,
+            "end": 2011,
+            "text": "Abschluss:</strong> Fachhochschulreife"
+          },
+          {
+            "name": "Berufschule, BBS-ME Otto Brenner-Schule",
+            "begin": 2008,
+            "end": 2010,
+            "text": "Abschluss:</strong> Staatlich geprüfter Assistent für Informatik"
+          },
+          {
+            "name": "Realschule, Ludwig-Windthorst-Schule",
+            "begin": 2004,
+            "end": 2008,
+            "text": "Abschluss:</strong> Erweiterter Sekundarabschluss I"
+          }
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "skillSections": [
+      {
+        "name": "Web Skills",
+        "icon": "fa-globe",
+        "skillTable": [
+          {
+            "name": "Computersprachen",
+            "skills": [
+              {
+                "name": "JavaScript",
+                "range": 5
+              },
+              {
+                "name": "PHP",
+                "range": 2.5
+              },
+              {
+                "name": "Ruby",
+                "range": 2
+              },
+              {
+                "name": "(My)SQL",
+                "range": 4
+              }
+            ]
+          },
+          {
+            "name": "Frameworks",
+            "skills": [
+              {
+                "name": "Node.js",
+                "range": 3
+              },
+              {
+                "name": "Angular.js",
+                "range": 4
+              },
+              {
+                "name": "jQuery",
+                "range": 5
+              },
+              {
+                "name": "Ruby on Rails",
+                "range": 4
+              }
+            ]
+          },
+          {
+            "name": "Technologien",
+            "skills": [
+              {
+                "name": "HTML5",
+                "range": 4.5
+              },
+              {
+                "name": "CSS/3",
+                "range": 4.5
+              },
+              {
+                "name": "SASS/LESS/Stylus",
+                "range": 4.5
+              },
+              {
+                "name": "Android",
+                "range": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Software Skills",
+        "icon": "fa-pencil",
+        "skillTable": [
+          {
+            "name": "OS & CMS",
+            "skills": [
+              {
+                "name": "Wordpress",
+                "range": 4
+              },
+              {
+                "name": "Joomla",
+                "range": 3
+              },
+              {
+                "name": "Typo 3",
+                "range": 2
+              }
+            ]
+          },
+          {
+            "name": "Produktion",
+            "skills": [
+              {
+                "name": "JIRA/Confluence",
+                "range": 5
+              },
+              {
+                "name": "Git/Gitflow",
+                "range": 5
+              }
+            ]
+          },
+          {
+            "name": "Design",
+            "skills": [
+              {
+                "name": "Adobe Photoshop",
+                "range": 2.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soft Skills",
+        "icon": "fa-user",
+        "skillTable": [
+          {
+            "name": "Soft Skills",
+            "skills": [
+              {
+                "name": "Flexibilität",
+                "range": 5
+              },
+              {
+                "name": "Teamfähigkeit",
+                "range": 5
+              },
+              {
+                "name": "Ehrgeiz",
+                "range": 5
+              }
+            ]
+          },
+          {
+            "name": "Eigenschaften",
+            "skills": [
+              {
+                "name": "100% geben",
+                "range": 5
+              },
+              {
+                "name": "Erfolgsorientiert",
+                "range": 5
+              },
+              {
+                "name": "Aufgeben",
+                "range": 0
+              }
+            ]
+          },
+          {
+            "name": "Sprachen",
+            "skills": [
+              {
+                "name": "Deutsch",
+                "range": 5
+              },
+              {
+                "name": "Englisch",
+                "range": 3.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

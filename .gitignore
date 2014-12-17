@@ -1,2 +1,4 @@
-libs/*
+src/libs/*
 .sass-cache
+application.zip
+node_modules/

@@ -1,0 +1,31 @@
+.com-ratingbar {
+  margin: $space 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  height: 10px;
+  clear: both;
+  li {
+    float: left;
+    margin-left: 5px;
+    width: 8px;
+    text-indent: -99999px;
+    height: 8px;
+    border-radius: 2px;
+    -ms-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    &.empty {
+      background: #bbb;
+    }
+    &.filled {
+      background: #666;
+    }
+
+    &.half {
+      background: linear-gradient(45deg, #666 0%,#666 50%, #bbb 50%,#bbb 100%);
+    }
+
+  }
+}
