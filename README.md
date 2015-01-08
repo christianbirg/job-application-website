@@ -19,13 +19,13 @@ This application only works with on an (local) server, becauseof e.g. cross orig
 -	Enable bower config by prefix bowerrc with a dot ".bowerrc"
 
 ```bash
-mv bowerrc .bowerrc
+npm install http-server
 ```
 
 -	Run following command in the terminal
 
 ```bash
-node webserver.js
+node_modules/http-server/bin/http-server public_html
 ```
 
 -	Open app in the browser http://localhost:8000/
@@ -39,11 +39,11 @@ node webserver.js
   <VirtualHost *:80>
       ServerName application.inc
       ServerAlias www.application.inc
-      DocumentRoot "/path/to/application/"
+      DocumentRoot "/path/to/application/public_html"
       ErrorLog "/path/to/apache2/application.com-error_log"
       CustomLog "/path/to/apache2/application.com-access_log" common
       ServerAdmin christian.birg@googlemail.com
-          <Directory "/path/to/application/">
+          <Directory "/path/to/application/public_html">
               Options Indexes FollowSymLinks
               AllowOverride All
               Order allow,deny
