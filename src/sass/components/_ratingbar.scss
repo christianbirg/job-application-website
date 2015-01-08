@@ -23,8 +23,16 @@
       background: #666;
     }
 
+    &.quarter {
+      background: linear-gradient(45deg, #666 0%,#666 25%, #bbb 25%,#bbb 100%);
+    }
+
     &.half {
       background: linear-gradient(45deg, #666 0%,#666 50%, #bbb 50%,#bbb 100%);
+    }
+
+    &.three-quarter {
+      background: linear-gradient(45deg, #666 0%,#666 75%, #bbb 75%,#bbb 100%);
     }
 
   }

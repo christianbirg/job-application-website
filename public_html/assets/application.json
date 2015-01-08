@@ -1,20 +1,20 @@
 {
   "company": {
     "name": {
-      "value": "aam it GmbH"
+      "value": "Musterfirma GmbH"
     },
     "address": {
       "person": {
-        "value": "z.H. Jürgen Hofmann"
+        "value": "Max Mustermann"
       },
       "street": {
-        "value": "Podbielskistr. 333"
+        "value": "Musterstadt 42"
       },
       "plz": {
-        "value": "D-30659"
+        "value": "D-1137"
       },
       "city": {
-        "value": "Hannover"
+        "value": "Musterstadt"
       }
     }
   },
@@ -39,18 +39,18 @@
   "person": {
     "icon": "glyphicon glyphicon-user",
     "name": {
-      "value": "Birg"
+      "value": "Jackson"
     },
     "forename": {
-      "value": "Christian"
+      "value": "Samuel"
     },
     "portrait": {
-      "src": "images/photo.jpg",
+      "src": "http://placehold.it/200x200&text=Profile",
       "klass": "img-circle"
     },
     "address": {
       "fullName": {
-        "value": "Christian Birg",
+        "value": "Samuel L. Jackson",
         "klass": "glyphicon glyphicon-user"
       },
       "telephone": {
@@ -58,19 +58,19 @@
         "klass": "glyphicon glyphicon-phone"
       },
       "email": {
-        "value": "christian.birg@gmail.com",
+        "value": "chris@incoqnito.de",
         "klass": "glyphicon glyphicon-envelope"
       },
       "street": {
-        "value": "Dohmeyers Weg 10A",
+        "value": "Musterstraße 21",
         "klass": "glyphicon glyphicon-home"
       },
       "plz": {
-        "value": "30625",
+        "value": "1337",
         "klass": "glyphicon glyphicon-map-marker"
       },
       "city": {
-        "value": "Hannover",
+        "value": "Musterstadt",
         "klass": "glyphicon glyphicon-map-marker"
       }
     }
@@ -88,33 +88,25 @@
       {
         "name": "Github",
         "href": "https://github.com/incoqnito",
-        "color": "#333333",
-        "tooltip": "Github Account",
+        "color": "#666",
+        "tooltip": "Github Profile",
         "klass": "fa fa-github",
-        "target": "_blank"
-      },
-      {
-        "name": "Incoqnito",
-        "href": "http://incoqnito.de/",
-        "color": "#768",
-        "tooltip": "My Website",
-        "klass": "fa fa-globe",
         "target": "_blank"
       }
     ]
   },
   "application": {
     "job": {
-      "value": "Frontend Entwickler (m/w)"
+      "value": "Web Entwickler"
     },
     "subject": {
-      "value": "Bewerbung als Frontend Entwickler (m/w)",
+      "value": "Lorem ipsum dolor sit amet",
       "icon": "fa fa-angle-double-down"
     },
-    "title": "Sehr geehrter Herr Hofmann,",
-    "content": "<p>ich bin über die Jobbörse der Arbeitsagentur (Ref.Nr.: <a href='https://jobboerse.arbeitsagentur.de/vamJB/stellenangeboteFinden.html;jsessionid=8MLxJLyTJgPyPYs3c29ZNTW4fnmWc2TrwQ693dyvjsBHmhR7k4t9!-519061541?&benc=gZekRioJ2uzuWrJEQ7esqXcB7ly8BnHDYguKg3J9jCkfkiP8PbXpWg%3D%3D&benc=T04d33IpqoYXR0nOLC8YKV58FrIMZghQK16Ec0fs9tKQv2%2F2ufxo5YO59wI3b5sioV%2F4snMxea4%3D&benc=Ms4nZv%2BTcXlgTae%2FUAhgXZxTsGsl1Xo6%2FE13qmZJPy0bCdK2e7AhJDRWm0JnW9hK7m9wsJCPwF%2BZI6MgRzHn0focJyIUZUXzRMpDY01LOuo%3D&benc=aAH9Kn5ZAk2Ev9uT9R6QBvxOJbKqq7P06a0CMHdBAZHWsec6BXCByw%3D%3D' target='_blank'>10000-1120803589-S</a>) auf Sie aufmerksam geworden. Das Durchlesen des Stellenangebots hat mein Interesse geweckt, daher will ich mich bei Ihnen auf die Stelle des Frontend Entwicklers bewerben.</p><p>Im Sommer 2014 habe ich meine Ausbildung zum Fachinformatiker für Anwendungsentwicklung erfolgreich abgeschlossen, woraufhin ich von meiner Ausbildungsstätte übernommen wurde und die Stelle des Junior Frontend Developers / JavaScript Application Developers wahr nahm.</p><p>Ich sehe meine Fähigkeiten in der Web Entwicklung - speziell im Bereich der Frontend Entwicklung - und beherrsche ein breites Spektrum an Web-Technologien, die ich nach Möglichkeit weiter ausbauen möchte. Ich habe an mehreren komplexen Vertriebstools im Pharmaziebereich auf Basis von Javascript, SASS und HTML5 mitgewirkt und unteranderem die Realisierung eines Pushservers mittels Node.js. Dennoch konnte ich viele Erfahrungen in der Backend / API-Entwicklung mittels PHP und Ruby on Rails gewinnen.</p><p>Zu meinen Stärken zählen Aufmerksamkeit, Flexibilität und Teamfähigkeit. Eine Eigenschaft, die mir oft als Laster zugesprochen wird, ist meine Zielstrebigkeit. Bei Problemstellungen bin ich stets bemüht, diese zu lösen, ohne dabei die Motivation zu verlieren. Meine Arbeit erledige ich schnell und gewissenhaft.</p><p>Um einen kleinen Einblick in meine Fähigkeiten zugeben, habe ich den Quellcode dieser Bewerbung beigefügt.</p><p>Meinen beruflichen Qualifikationen entsprechend empfinde ich ein jährliches Gehalt von 30.000 Euro Brutto als angemessen. Klingt das interessant für Sie? Dann sehen Sie meine weiteren Unterlagen durch und laden mich zu einem persönlichen Gespräch ein. Ich freue mich darauf!</p>",
-    "salutation": "Mit freundlichen Grüßen",
-    "signing": "Christian Birg"
+    "title": "Dear ladies and gentlemen,",
+    "content": "<p>Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.</p><p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p><p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p><p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>",
+    "salutation": "Regardings to",
+    "signing": "Samuel L. Jackson"
   },
   "index": {
     "id": "index",
@@ -135,18 +127,18 @@
         "target": ""
       },
       {
-        "name": "Zeugnis Ausbildung Jahr 3",
-        "href": "assets/ausbildungsjahr_drei.png",
+        "name": "Zeugnis 1",
+        "href": "http://placehold.it/2480x3508&text=Zeugnis 1",
         "target": "_blank"
       },
       {
-        "name": "IHK Prüfungszeugniskopie",
-        "href": "assets/ihk_abschluss.png",
+        "name": "Zeugnis 2",
+        "href": "http://placehold.it/2480x3508&text=Zeugnis 2",
         "target": "_blank"
       },
       {
-        "name": "Letztes Arbeitszeugnis",
-        "href": "assets/zwischenzeugnis.pdf",
+        "name": "Zeugnis 3",
+        "href": "http://placehold.it/2480x3508&text=Zeugnis 3",
         "target": "_blank"
       }
     ]
@@ -158,7 +150,7 @@
         "icon": "fa-rocket",
         "ticks": [
           {
-            "name": "THIS IS! Digital Media Group GmbH",
+            "name": "Unternehmen 2",
             "begin": "01.07.2014",
             "end": "31.10.2014",
             "text": ""
@@ -170,13 +162,13 @@
         "icon": "fa-institution",
         "ticks": [
           {
-            "name": "THIS IS! Digital Media Group GmbH",
+            "name": "Unternehmen 2",
             "begin": "01.09.2012",
             "end": "30.06.2014",
             "text": "Abschluss:</strong> Fachinformatiker für Anwendungsentwicklung"
           },
           {
-            "name": "Höft & Wessel AG",
+            "name": "Unternehmen 1",
             "begin": "01.08.2011",
             "end": "31.08.2012",
             "text": "Beginn der Ausbildung"
@@ -188,19 +180,19 @@
         "icon": "fa-graduation-cap",
         "ticks": [
           {
-            "name": "Fachhochschule. BBS-ME Otto Brenner-Schule",
+            "name": "Fachhochschule",
             "begin": 2010,
             "end": 2011,
             "text": "Abschluss:</strong> Fachhochschulreife"
           },
           {
-            "name": "Berufschule, BBS-ME Otto Brenner-Schule",
+            "name": "Berufschule",
             "begin": 2008,
             "end": 2010,
             "text": "Abschluss:</strong> Staatlich geprüfter Assistent für Informatik"
           },
           {
-            "name": "Realschule, Ludwig-Windthorst-Schule",
+            "name": "Realschule",
             "begin": 2004,
             "end": 2008,
             "text": "Abschluss:</strong> Erweiterter Sekundarabschluss I"
@@ -245,6 +237,10 @@
               },
               {
                 "name": "Angular.js",
+                "range": 4
+              },
+              {
+                "name": "Grunt.js",
                 "range": 4
               },
               {
@@ -320,6 +316,10 @@
               {
                 "name": "Adobe Photoshop",
                 "range": 2.5
+              },
+              {
+                "name": "Adobe Indesign",
+                "range": 3.5
               }
             ]
           }
@@ -358,8 +358,12 @@
                 "range": 5
               },
               {
+                "name": "Füße hochlegen",
+                "range": 0.5
+              },
+              {
                 "name": "Aufgeben",
-                "range": 0
+                "range": 0.0
               }
             ]
           },
