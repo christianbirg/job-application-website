@@ -28,7 +28,7 @@ npm install http-server
 node_modules/http-server/bin/http-server public_html
 ```
 
--	Open app in the browser http://localhost:8000/
+-	Open app in the browser http://localhost:8080/
 
 ##Other install process
 
@@ -73,3 +73,7 @@ mv htaccess .htaccess
 ```
 
 -	Run the app in the browser under "http://application.inc"
+
+#Hint
+
+When you choose the way nodejs way to run the http-server, the htaccess doesnt work. So you must can access the application only to localhost:8080 and not localhost:8080/curriculum-vitae for example. The NodeJS way is only quick use.
