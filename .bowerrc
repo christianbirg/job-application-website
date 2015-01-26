@@ -1,4 +1,4 @@
 {
-  "directory": "src/libs",
+  "directory": "vendor",
   "analytics": false
 }

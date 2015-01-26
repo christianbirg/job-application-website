@@ -1,0 +1,32 @@
+section#area
+  article#index
+    ng-include(src="'/views/_partials/navigation.html'")
+    ng-include(src="'/views/_partials/header.html'")
+    .application-content
+      .row
+        .col-xs-12
+          h1 Bewerbung
+          h3 als
+          h1(ng-hide='!$root.editmode', buttons='no', ng-bind-html='application.job.value', editable-text='application.job.value')
+          h1(ng-hide='$root.editmode', buttons='no', ng-bind-html='application.job.value')
+          h3 bei
+          h2(ng-hide='!$root.editmode', buttons='no', ng-bind-html='company.name.value', editable-text='company.name.value')
+          h2(ng-hide='$root.editmode', buttons='no', ng-bind-html='company.name.value')
+        .col-xs-push-7.col-xs-5(style='margin-top: 200px;')
+          .assets
+            .logo
+              i.fa.fa-home.fa-2x
+            h3(style='text-align: center') Anlagen
+            .information-list
+              .col-xs-12
+                p
+                  strong Anlagenliste
+                .list
+                  table
+                    tr(ng-repeat='asset in index.assets')
+                      td.first-row
+                        p
+                          a(ng-href='{{ asset.href }}', target='{{ asset.target}}')
+                            | {{ asset.name }}
+                      td.second-row
+    ng-include(src="'/views/_partials/footer.html'")

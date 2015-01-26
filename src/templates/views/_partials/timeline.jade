@@ -1,0 +1,11 @@
+ul.com-timeline
+  li(ng-repeat='tick in section.ticks', ng-class="{true:'', false:'timeline-inverted'}[$index%2==0]")
+    .timeline-badge
+    .timeline-panel
+      .timeline-heading
+        p
+          strong {{ tick.name }}
+        p
+          small.timeline-time {{ tick.begin }} - {{ tick.end }}
+      .timeline-body
+        p(ng-bind-html='tick.text')

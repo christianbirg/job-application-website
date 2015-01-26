@@ -1,0 +1,28 @@
+doctype html
+html.no-js(lang='en', ng-app='application')
+  head
+    title Bewerbung von Christian Birg
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Angular-RequireJS sample app
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    base(href='/')
+    link(rel='stylesheet', type='text/css', href='css/vendor.css')
+    link(rel='stylesheet', type='text/css', href='css/src.css')
+    link(href='http://fonts.googleapis.com/css?family=Oswald', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet', type='text/css')
+  body
+    ul.settings
+      li
+        .onoffswitch
+          input#myonoffswitch.onoffswitch-checkbox(type='checkbox', name='onoffswitch', ng-change='$root.switchMode()', ng-model='$root.editmode')
+          label.onoffswitch-label(for='myonoffswitch')
+            span.onoffswitch-inner
+            span.onoffswitch-switch
+    ng-view
+    #loading-overlay
+      .spinner-wrapper
+        .spinner
+    script(src='js/vendor.js')
+    script(src='js/src.js')

@@ -1,4 +1,5 @@
-src/libs/*
+vendor/*
+!vendor/.gitkeep
 .sass-cache
 application.zip
 node_modules/

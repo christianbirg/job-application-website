@@ -7,8 +7,8 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
 		templateUrl: 'views/index.html',
 		controller: 'IndexController'
 	})
-	.when('/cover-letter', {
-		templateUrl: 'views/cover-letter.html',
+	.when('/application', {
+		templateUrl: 'views/application.html',
 		controller: 'ApplicationController'
 	})
 	.when('/curriculum-vitae', {

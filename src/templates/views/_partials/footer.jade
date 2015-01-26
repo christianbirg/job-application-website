@@ -1,0 +1,13 @@
+.application-footer
+  .row
+    .col-xs-12
+      p
+        span {{ person.address.fullName.value }}
+        span.separator -
+        span {{ person.address.street.value }}
+        span.separator -
+        span {{ person.address.plz.value }} {{ person.address.city.value }}
+        span.separator -
+        span E-Mail: {{ person.address.email.value }}
+        span.separator -
+        span Tel.: {{ person.address.telephone.value }}

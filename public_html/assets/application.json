@@ -39,10 +39,10 @@
   "person": {
     "icon": "glyphicon glyphicon-user",
     "name": {
-      "value": "Jackson"
+      "value": "Birg"
     },
     "forename": {
-      "value": "Samuel"
+      "value": "Jackson"
     },
     "portrait": {
       "src": "http://placehold.it/200x200&text=Profile",
@@ -50,7 +50,7 @@
     },
     "address": {
       "fullName": {
-        "value": "Samuel L. Jackson",
+        "value": "Christian Birg",
         "klass": "glyphicon glyphicon-user"
       },
       "telephone": {
@@ -58,19 +58,19 @@
         "klass": "glyphicon glyphicon-phone"
       },
       "email": {
-        "value": "chris@incoqnito.de",
+        "value": "christian.birg@googlemail.com",
         "klass": "glyphicon glyphicon-envelope"
       },
       "street": {
-        "value": "Musterstraße 21",
+        "value": "Dohmeyers Weg 10A",
         "klass": "glyphicon glyphicon-home"
       },
       "plz": {
-        "value": "1337",
+        "value": "30625",
         "klass": "glyphicon glyphicon-map-marker"
       },
       "city": {
-        "value": "Musterstadt",
+        "value": "Hannover",
         "klass": "glyphicon glyphicon-map-marker"
       }
     }
@@ -113,7 +113,7 @@
     "assets": [
       {
         "name": "Anschreiben",
-        "href": "/cover-letter",
+        "href": "/application",
         "target": ""
       },
       {

@@ -1,31 +1,26 @@
 module.exports = function(grunt) {
 
-  // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
       options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n',
-        sourcemap: true,
-        beautify: false,
-        mangle: false,
-        compress: false,
+
       },
-      'libraries': {
+      vendor: {
         files: {
-          'public_html/js/libs.js': [
-            'src/libs/jquery/dist/jquery.js',
-            'src/libs/bootstrap-sass-official/assets/javascripts/bootstrap.js',
-            'src/libs/angular/angular.js',
-            'src/libs/angular-route/angular-route.min.js',
-            'src/libs/angular-sanitize/angular-sanitize.min.js',
-            'src/libs/angular-xeditable/dist/js/xeditable.min.js'
+          'public_html/js/vendor.js': [
+          'vendor/jquery/dist/jquery.js',
+          'vendor/bootstrap-sass-official/assets/javascripts/bootstrap.js',
+          'vendor/angular/angular.js',
+          'vendor/angular-route/angular-route.min.js',
+          'vendor/angular-sanitize/angular-sanitize.min.js',
+          'vendor/angular-xeditable/dist/js/xeditable.min.js'
           ]
         }
       },
-      'application': {
+      src: {
         files: {
-          'public_html/js/app.js': [
+          'public_html/js/src.js': [
             'src/js/app/main.js',
             'src/js/app/run.js',
             'src/js/app/routes.js',
@@ -42,44 +37,103 @@ module.exports = function(grunt) {
       }
     },
     sass: {
-      'sass-compile': {
+      vendor: {
         options: {
           style: 'compressed'
         },
         files: {
-          'public_html/css/style.css': ['src/sass/style.scss'],
+          'public_html/css/vendor.css': 'src/scss/vendor.scss'
+        }
+      },
+      src: {
+        options: {
+          style: 'compressed'
+        },
+        files: {
+          'public_html/css/src.css': 'src/scss/src.scss'
         }
       }
     },
+    copy: {
+      'font-awesome': {
+        expand: true,
+        cwd: 'vendor/font-awesome/fonts/',
+        src: '**',
+        dest: 'public_html/fonts/',
+      },
+      'font-bootstrap': {
+        expand: true,
+        cwd: 'vendor/bootstrap-sass-official/assets/fonts/bootstrap/',
+        src: '**',
+        dest: 'public_html/fonts/bootstrap',
+      },
+      'images': {
+        expand: true,
+        cwd: 'src/img',
+        src: '**',
+        dest: 'public_html/images/',
+      },
+    },
+    jade: {
+      src: {
+        options: {
+          data: {
+            debug: false,
+          },
+          pretty: true
+        },
+        files: [{
+          expand: true,
+          cwd: 'src/templates/',
+          src: ['**/*.jade'],
+          dest: 'public_html/',
+          ext: '.html',
+        }]
+      }
+    },
     watch: {
-      options: {
-        livereload: true,
-      },
-      scripts: {
-        options: {
-          spawn: true,
-        },
-        files: ['src/js/**/*.js'],
-        tasks: ['uglify:application']
-      },
       scss: {
-        options: {
-          spawn: true,
-        },
         files: ['src/sass/**/*.scss'],
-        tasks: ['sass']
+        tasks: ['sass:src'],
+        options: {
+          spawn: false,
+        },
+      },
+      js: {
+        files: ['src/js/**/*.js'],
+        tasks: ['uglify:src'],
+        options: {
+          spawn: false,
+        },
+      },
+      html: {
+        files: ['src/templates/**/*.jade'],
+        tasks: ['jade:src'],
+        options: {
+          spawn: false,
+        },
+      },
+    },
+    concurrent: {
+      dev: {
+        tasks: ['watch:scss', 'watch:js', 'watch:html'],
+        options: {
+          logConcurrentOutput: true
+        }
       }
     }
   });
 
-
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-jade');
+  //grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-concurrent');
 
-  grunt.registerTask('default', ['uglify', 'sass']);
-  grunt.registerTask('listen', ['uglify', 'sass','watch']);
-  grunt.registerTask('libraries', ['uglify:libraries']);
+  grunt.registerTask('develope', ['uglify', 'sass', 'jade', 'copy', 'concurrent:dev']);
+
+  grunt.registerTask('build', ['uglify', 'sass', 'jade']);
 
 };

@@ -1,0 +1,46 @@
+section#area
+  article#application
+    ng-include(src="'/views/_partials/navigation.html'")
+    ng-include(src="'/views/_partials/header.html'")
+    .application-content
+      .row
+        .col-xs-6
+          p
+            b.uppercased
+              span(ng-hide='!$root.editmode', buttons='no', ng-bind-html='company.name.value', editable-text='company.name.value')
+              span(ng-hide='$root.editmode', ng-bind-html='company.name.value')
+            br
+            span(ng-hide='!$root.editmode', buttons='no', ng-bind-html='company.address.person.value', editable-text='company.address.person.value')
+            span(ng-hide='$root.editmode', ng-bind-html='company.address.person.value')
+            br
+            span(ng-hide='!$root.editmode', buttons='no', ng-bind-html='company.address.street.value', editable-text='company.address.street.value')
+            span(ng-hide='$root.editmode', ng-bind-html='company.address.street.value')
+            br
+            span(ng-hide='!$root.editmode', buttons='no', ng-bind-html='company.address.plz.value', editable-text='company.address.plz.value')
+            span(ng-hide='$root.editmode', ng-bind-html='company.address.plz.value')
+            &nbsp;
+            span(ng-hide='!$root.editmode', buttons='no', ng-bind-html='company.address.city.value', editable-text='company.address.city.value')
+            span(ng-hide='$root.editmode', ng-bind-html='company.address.city.value')
+        .col-xs-6.text-right
+          p
+            | {{ person.address.city.value }}, den {{ date.getDate() }}.{{ date.getMonth() + 1 }}.{{ date.getFullYear() }}
+      .row
+        .col-xs-12
+          .spacer-10
+          .logo
+            i.fa.fa-2x.fa-home
+          h3(ng-hide='!$root.editmode', buttons='no', ng-bind-html='application.subject.value', editable-text='application.subject.value')
+          h3(ng-hide='$root.editmode', buttons='no', ng-bind-html='application.subject.value')
+          .spacer-10
+          p.title(ng-hide='!$root.editmode', buttons='no', ng-bind-html='application.title', editable-text='application.title')
+          p.title(ng-hide='$root.editmode', buttons='no', ng-bind-html='application.title')
+          .content
+            div(ng-hide='!$root.editmode', href='#', ng-bind-html='application.content', editable-textarea='application.content')
+            div(ng-hide='$root.editmode', href='#', ng-bind-html='application.content')
+          .spacer-10
+          p.salutation(ng-hide='!$root.editmode', buttons='no', ng-bind-html='application.salutation', editable-text='application.salutation')
+          p.salutation(ng-hide='$root.editmode', ng-bind-html='application.salutation')
+          .spacer-20
+          p.name(ng-hide='!$root.editmode', buttons='no', ng-bind-html='application.signing', editable-text='application.signing')
+          p.name(ng-hide='$root.editmode', ng-bind-html='application.signing')
+    ng-include(src="'/views/_partials/footer.html'")

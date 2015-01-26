@@ -1,3 +1,4 @@
+
 <section id="area">
   <article id="index">
     <ng-include src="'/views/_partials/navigation.html'"></ng-include>
@@ -13,30 +14,23 @@
           <h2 ng-hide="!$root.editmode" buttons="no" ng-bind-html="company.name.value" editable-text="company.name.value"></h2>
           <h2 ng-hide="$root.editmode" buttons="no" ng-bind-html="company.name.value"></h2>
         </div>
-      </div>
-      <div class="col-xs-push-7 col-xs-5" style="margin-top: 200px;">
-        <div class="assets">
-          <div class="logo">
-            <i class="fa fa-home fa-2x"></i>
-          </div>
-          <h3 style="text-align: center">Anlagen</h3>
-          <div class="information-list">
-            <div class="col-xs-12">
-              <p><strong>Anlagenliste</strong></p>
-              <div class="list">
-                <table>
-                  <tr ng-repeat="asset in index.assets">
-                    <td class="first-row">
-                      <p>
-                        <a ng-href="{{ asset.href }}" target="{{ asset.target}}">
-                          {{ asset.name }}
-                        </a>
-                      </p>
-                    </td>
-                    <td class="second-row">
-                    </td>
-                  </tr>
-                </table>
+        <div style="margin-top: 200px;" class="col-xs-push-7 col-xs-5">
+          <div class="assets">
+            <div class="logo"><i class="fa fa-home fa-2x"></i></div>
+            <h3 style="text-align: center">Anlagen</h3>
+            <div class="information-list">
+              <div class="col-xs-12">
+                <p><strong>Anlagenliste</strong></p>
+                <div class="list">
+                  <table>
+                    <tr ng-repeat="asset in index.assets">
+                      <td class="first-row">
+                        <p><a ng-href="{{ asset.href }}" target="{{ asset.target}}">{{ asset.name }}</a></p>
+                      </td>
+                      <td class="second-row"></td>
+                    </tr>
+                  </table>
+                </div>
               </div>
             </div>
           </div>

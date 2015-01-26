@@ -1,0 +1,14 @@
+section#area
+  article#curriculum-vitae
+    ng-include(src="'/views/_partials/navigation.html'")
+    ng-include(src="'/views/_partials/header.html'")
+    .application-content
+      div(ng-repeat='section in curriculum.events')
+        .curriculum-section.row
+          .col-xs-12
+            .logo
+              i(class='fa fa-2x {{ section.icon }}')
+            h3 {{ section.name }}
+          .col-xs-12
+            timeline
+    ng-include(src="'/views/_partials/footer.html'")

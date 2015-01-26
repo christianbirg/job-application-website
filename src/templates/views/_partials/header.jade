@@ -1,0 +1,36 @@
+.application-header
+  .row
+    .col-xs-4
+      .name
+        h1 
+          | {{ person.name.value }}
+          br
+          | {{ person.forename.value }}
+      .social-media
+        ul
+          li(ng-repeat='entry in social.entries')
+            a(ng-href='{{ entry.href }}', target='{{ entry.target }}', tooltip='tooltip', data-placement='top', title='{{ entry.tooltip }}')
+              i(class='{{ entry.klass }}', style='color: {{ entry.color }} !important;')
+    .col-xs-4
+      .profile-photo
+        img(class='{{ person.portrait.klass }}', src='{{ person.portrait.src }}')
+    .col-xs-4
+      .address
+        p
+          span {{ person.address.fullName.value }}
+          i(class='{{ person.address.fullName.klass }}')
+          br
+          span {{ person.address.street.value }}
+          i(class='{{ person.address.street.klass }}')
+          br
+          span {{ person.address.plz.value }} {{ person.address.city.value }}
+          i(class='{{ person.address.plz.klass }}')
+          br
+          span {{ person.address.email.value }}
+          i(class='{{ person.address.email.klass }}')
+          br
+          span {{ person.address.telephone.value }}
+          i(class='{{ person.address.telephone.klass }}')
+  .row
+    .col-xs-push-2.col-xs-8
+      hr

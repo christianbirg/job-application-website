@@ -1,0 +1,28 @@
+section#area
+  article#skill-page
+    ng-include(src="'/views/_partials/navigation.html'")
+    ng-include(src="'/views/_partials/header.html'")
+    .application-content
+      div(ng-repeat='section in skills.skillSections')
+        .skill-section.row
+          .col-xs-12
+            .logo
+              i.fa.fa-2x(class='{{ section.icon }}')
+            h3 {{ section.name }}
+          div(ng-repeat='table in section.skillTable')
+            .col-xs-4
+              .row
+                .information-list
+                  .col-xs-12
+                    p
+                      strong 
+                        | {{ table.name }}
+                    .list
+                      table
+                        tr(ng-repeat='skill in table.skills')
+                          td
+                            p 
+                              | {{ skill.name }}
+                          td
+                            rating-bar(range='{{skill.range }}')
+    ng-include(src="'/views/_partials/footer.html'")

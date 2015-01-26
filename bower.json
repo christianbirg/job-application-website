@@ -17,6 +17,11 @@
     "angular-xeditable": "~0.1.8",
     "requirejs": "~2.1.9",
     "requirejs-text": "~2.0.10",
-    "bootstrap-sass-official": "~3.3.1"
+    "bootstrap-sass-official": "~3.3.1",
+    "font-awesome": ""
+  },
+  "devDependencies": {
+    "grunt-contrib-jade": "~0.14.0",
+    "grunt-contrib-copy": "~0.7.0"
   }
 }
